@@ -7,7 +7,6 @@ input, legend, p, table, td, th, ol, ul, li, img{
     margin: 0px;
     padding: 0;
     border: 0px;
-    font-size: 100%;
     font: inherit;
 }
 article, aside, details, figcaption, figure,
@@ -15,7 +14,7 @@ footer, header, menu, nav, section {
     display: block; 
 }
 body{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
     line-height: 1;
     color: #fafbfc;
@@ -50,11 +49,8 @@ ol,ul{
 ul li {
     padding-left: 0.5em;
 }
-input {
-    margin: 5px 0 5px 0;
-}
 #ConList li{
-    margin-bottom: 15px;
+    margin: 0 0 15px 35px;
     font-size: 16px;
 }
 a {
@@ -62,7 +58,7 @@ a {
     color: #fafbfc;
     text-decoration: none;
 }
-    a:hover {
+    a:active {
         border-bottom-color: #f56a6a;
         color: #f56a6a !important; 
     }
@@ -85,7 +81,7 @@ ul.icons li:last-child {
     margin-right: 10px;
 }
 #_list {
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 /*image*/
@@ -96,8 +92,10 @@ img{
     position: relative;
 }
 .img_main{
-    max-width: 70%;
+    max-width: 570px;
+    box-shadow: 1px 1px 5px #a1a2a3;
     margin: 0.5rem 0 1em 0;
+    z-index: 2;
 }
 .box1 { /*기본 박스*/
     width: 800px;
@@ -119,14 +117,54 @@ img{
     height: 480px;
     position: relative;
 }
+.box5 { /*중간사이즈2*/
+    width: 800px;
+    height: 540px;
+    position: relative;
+}
+.box6 { /*작은사이즈*/
+    width: 800px;
+    height: 280px;
+    position: relative;
+}
 .imgpos{
     position: absolute;
     width: 400px;
     border: 1px solid #a1a2a3;
 }
-a.image:hover img {
-    transform: scale(1.075); }
+/*map image*/
 
+#imghd {
+    position: relative;
+    width: inherit;
+    overflow: hidden;
+}
+#mapbox {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 305px;
+    float: right;
+    border: 2px solid #fafbfc55;
+    border-radius: 10px;
+}
+#img_map {
+    position: absolute;
+    width: 240px;
+    height: 303px;
+    z-index: 1;
+    transition: all 1.5s;
+}
+#mapbox[name="hukuoka"]:hover #img_map{
+    transform: scale(2);
+    top: -200px;
+    right: -140px;
+}
+#mapbox[name="osaka"]:hover #img_map {
+    transform: scale(2);
+    top: -150px;
+    right: -50px;
+}
 /*wrap*/
 
 #wrap{
@@ -176,13 +214,17 @@ header .logo {
 }
 header .icons {
     float: right;
-    text-align: right;
+    text-align: center;
     font-weight: 600;
+    background-color: #b1b2b377;
+    margin-right: 20px;
 }
 header .icons a {
-    background-color: #b1b2b377;
+    border: none;
+    font-family: "Jua","Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 18px;
 }
-
 /*container*/
 
 #container{
@@ -208,10 +250,47 @@ header .icons a {
     padding: 10px 0 8px 0.5em;
     border-bottom: 2px solid #f56a6a;
 }
-#nav ul.region li{
+/*neon effect*/
+@keyframes neon {
+	from {
+		text-shadow: 0 0 5px #b1b2b3,
+					 0 0 9px #b1b2b3,
+					 0 0 13px #b1b2b3,
+					 0 0 19px #f56a6a,
+					 0 0 25px #f56a6a,
+					 0 0 32px #f56a6a,
+					 0 0 42px #f56a6a,
+					 0 0 56px #f56a6a;
+	}
+	to {
+		text-shadow: 0 0 3px #b1b2b3,
+                     0 0 6px #b1b2b3,
+                     0 0 9px #b1b2b3,
+                     0 0 12px #f56a6a,
+                     0 0 16px #f56a6a,
+                     0 0 20px #f56a6a,
+                     0 0 24px #f56a6a,
+                     0 0 28px #f56a6a;
+	}
+}
+#nav ul.region a {
+    border: none;
     font-size: 1.3em;
-    margin-top: 25px;
-    padding-left: 2em;
+}
+#nav ul.region li{
+    margin-top: 18px;
+    padding: 5px 0 5px 35px;
+	transition: all 0.5s;
+	animation: neon 2.5s ease-in-out infinite alternate;
+}
+#nav ul.region li:hover {
+    font-size: 1.3em;
+}
+#clicked {
+    font-size: 1.3em;
+}
+#clicked a{
+    color: #f56a6a;
 }
 /*section*/
 
@@ -245,7 +324,11 @@ header .icons a {
     margin: 1.2em 0 0.8em;
     padding-bottom: 5px;
 }
-
+#libox {
+    border: 1px solid #b1b2b3;
+    width: 450px;
+    height: 180px;
+}
 /*aside*/
 #aside {
     width: 375px;

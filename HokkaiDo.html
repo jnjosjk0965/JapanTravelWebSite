@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>홋카이도</title>
+    <title>오사카</title>
     <link rel="stylesheet" href="./FinalTest.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
         <header id="header_content">
             <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
             <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
+                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
+                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
             </ul>
         </header>
         <div id="inner">
@@ -26,53 +26,59 @@
                         <li>여행지</li>
                         <ul class="region" >
                             <li><a href="./Fukuoka.html" >후쿠오카</a></li>
-                            <li><a href="./Osaka.html" >오사카</a></li>
-                            <li><a href="./Nagoya.html" >나고야</a></li>
+                            <li id="clicked"><a href="./Osaka.html">오사카</a></li>
                             <li><a href="./Tokyo.html" >도쿄</a></li>
-                            <li><a href="./HokkaiDo.html" style="color: #f56a6a;">홋카이도</a></li>
+                            <li><a href="./HokkaiDo.html" >홋카이도</a></li>
                         </ul>
                     </ul>
                 </nav>
                 <!--main content 영역-->
                 <section id="section">
                     <header id="header_article">
-                        <h1 class="article_title">홋카이도</h1>
-                        <img src="./images/Osaka_main.jpg" class="img_main" alt="후쿠오카" style="width: 550px;">
-                        <p style="width: 540px;">한국과 가깝고 저렴해서 기대없이 떠났다가 두 번 가고, 세 번 가고, 철마다 간다는 후쿠오카.
-                            그만큼 먹거리와 즐길 거리도 풍성하고 교통도 편리하여 여행 초보자에게 매력이 넘치는 곳. 
-                            또한 근교의 도시들도 특색이 넘쳐 볼거리가 풍부하다.</p>
+                        <h1 class="article_title">오사카</h1>
+                        <div id="imghd">
+                            <img src="./images/Osaka_main.jpg" class="img_main" alt="오사카" style="width: 550px;">
+                            <div id="mapbox" name="osaka">
+                                <img src="./images/map/map_osaka.png" id="img_map" alt="osaka">
+                            </div>    
+                        </div>
+                        <p style="width: 540px;">접근성이 좋아 첫 해외여행지로 어렵지 않은 오사카. 다양한 먹거리와 볼거리, 즐길 거리가 풍부해
+                        눈과 입이 즐겁다. 또 주변에 있는 교토 나라등 색다른 매력이 있는 도시들도 같이 들르면 좋다.
+                        </p><br>
+                        <div id="libox">
                             <h4 id="_list">목차</h4>
                             <ul id="ConList">
                                 <li><a href="#food">먹을거리</a></li>
                                 <li><a href="#sight">관광지</a></li>
                                 <li><a href="#nearby_city">주변 도시</a></li>
                             </ul>
+                        </div>
                     </header>
                     <article>
                             <h2 class="content_title" id="food">먹을거리</h2>
-                            <h4>게</h4>
-                            <img src="./" class="img_main">
-                            <p>일본 대표 메뉴인 라멘. 3대 라면중 하나인 하카타 라멘은 진하게 우려낸 돼지뼈 국물의 돈코츠 라멘이다. 깔끔한 맛의 뿌연 육수에 가늘지만 탄력 있는 면이 특징. 고명으로 올라가는 챠슈(얇게 썬 돼지고기)가 사르르 녹는다.
-                                유명 체인으로는 이치란(一蘭),잇푸도(一風堂)가 있다.
+                            <h4>타코야키</h4>
+                            <img src="./images/takoyaki01.jpg" class="img_main">
+                            <p>타코야키하면 오사카, 보들보들한 속과 쫄깃한 문어 식감이 잘 어우러져 자꾸 생각나게 된다. <br>크기가 조금 커 이쑤시개 하나로는 먹기 불편하니 넉넉히 챙기자.
                             </p>
-                            <h4>어묵</h4>
-                            <img src="./" class="img_main">
-                            <p>일본식 곱창전골. 소의 내장(모츠)을 넣어 만든 나베 요리. 곱창과 부추, 양배추 등 채소와 완자를 넣고 간장이나 된장으로 맛을 내 푹 끓여 먹는다. 곱창을 다 먹고 남은 국물에 국수를 말아 먹는 것도 잊지 말자.</p>
-                            <h4>우니(성게알)</h4>
-                            <img src="./" class="img_main">
-                            <p>후쿠오카 대표 향토요리. 닭고기를 푹 우려낸 국물이 닭곰탕과 비슷한데 샤브샤브처럼 먹는 게 특이하다. 미즈타키는 먼저 국물에 소금을 조금만 넣어 깊은 맛을 충분히 즐긴 다음, 닭고기와 양배추를 소스와 함께 먹는다. 마지막으로 밥을 넣고 끓여 죽으로 즐긴다.</p>
-                            <h4>고보텐 우동</h4>
-                            <img src="./" class="img_main">
-                            <p>넙적하고 부드러운 면에 우엉튀김(고보텐)을 얻은 후쿠오카 대표 우동. 일본 우동의 발상지답게 가츠오부시와 해산물로 맛을 낸 국물이 일품.</p>
-                            <h4>후쿠오카 함바그</h4>
-                            <img src="./" class="img_main">
-                            <p>어쩌면 후쿠오카를 떠올릴때 가장 먼저 생각 나는 메뉴. 서양에서 들어온 햄버그 스테이크를 일본식으로 만든 것이다. 함바그에 동양식으로 밥, 된장국을 곁들여 먹으며, 자신의 취향에 맞게 다양한 소스나 사이드, 토핑을 선택할 수 있어서 좋다. 특정 전문점들은 생 함바그를 개인 돌판에 직접 구워먹는 방식으로 유명하다.</p>
+                            <h4>오코노미야끼</h4>
+                            <!--유명 맛집 아-란/카츠몬/후쿠타로-->
+                            <img src="./images/okonomiyaki.jpg" class="img_main">
+                            <p>오사카에서 탄생한 음식으로, 다양한 재료를 반죽해 철판에 구운 일본식 부침개라할 수 있다. 취향대로 '오코노미'와 구이 '야키'가 합쳐진 말로 원하는 재료를 골라 넣어먹을 수 있는 가게도 있다.
+                                대부분의 가게에선 직원들이 구워주는 경우가 많으니 걱정 말고 가보자.
+                            </p>
+                            <h4>쿠시카츠</h4>
+                            <img src="./images/kusikatsu.jpg" class="img_main">
+                            <p>바삭한 꼬치 튀김을 톡 쏘는 소스에 찍어 먹으면 시원한 맥주 생각이 절로 난다. 단 소스는 한 번만 찍는게 국룰이므로 기억하고 가자.</p>
+                            <h4>고베규</h4>
+                            <img src="./images/gobegyu.jpg" class="img_main">
+                            <p>일본, 그것도 칸사이 지방에 왔다면 꼭 먹어봐야 할 메뉴. 일본의 와규가 유명하는 것은 누구나 잘 아는 사실이지만, 
+                                그중에서도 고베 지역의 소인 고베규는 차원이 다르다. 마블링이 일품이라 불에 살짝만 구워도 그 풍미가 뛰어나다.</p>
                             <h2 class="content_title" id="sight">관광지</h2>
                             <h4>오사카 성</h4>
-                            <div class="box1">
-                            <img src="./" class="imgpos" style="z-index: 10;">
-                            <img src="./" class="imgpos" style="top: 5px;right: 25px;">
-                            <img src="./" class="imgpos" style="z-index: 12;bottom: 5px;right: 130px;">
+                            <div class="box2">
+                            <img src="./images/osakacastle01.JPG" class="imgpos" >
+                            <img src="./images/osakacastle02.JPG" class="imgpos" style="top: 0px;left: 410px;">
+                            <img src="./images/osakacastle03.JPG" class="imgpos" style="top: 280px;left: 410px;">
                             </div>
                             <h5>일본 3대 성 중 하나</h5>
                             <p>오사카 관광명소로 손꼽히는 대표적인 곳 오사카성입니다. 봄에는 벚꽃이 만개하여 벚꽃놀이 가기 좋은 여행지고,
@@ -80,71 +86,73 @@
                                   일본 건축양식을 잘 보여주는 성으로 높은 곳에서 바라보는 천수각이 아름다운 곳입니다. 주변에는 인공호수를 비롯해 산책하기도 좋습니다.
                             </p>
                             <br>
-                            <h4>도톤보리</h4>
-                            <div class="box1">
-                                <img src="./" class="imgpos" style="z-index: 15;">
-                                <img src="./" class="imgpos" style="left: 50px;bottom: 5px;">
-                                <img src="./" class="imgpos" style="width: 380px;right: 30px;">
+                            <h4>도톤보리, 신사이바시</h4>
+                            <div class="box5">
+                                <img src="./images/dotonbori01.JPG" class="imgpos" style="top: 10px;">
+                                <img src="./images/dotonbori03.png" class="imgpos" style="left: 410px;bottom: 10px;">
+                                <img src="./images/dotonbori02.JPG" class="imgpos" style="width: 380px;left: 410px;">
+                                <img src="./images/dotonbori04.JPG" class="imgpos" style="bottom:0px;width:360px;left: 40px;">
                             </div>
-                            <h5>맛집 탐방과 쇼핑을 함께 즐길 수 있는 번화가</h5>
-                            <p>텐진은 후쿠오카 제일의 번화가로 다양한 물품을 파는 가게들과 백화점이 밀집해있다. 
-                                또한 지하에는 텐진의 지하를 남북으로 관통하는 텐진지하상가가 있다.
-                                약 590m의 지하상가에 1000여개의 매장이 늘어서있어 쇼핑을 좋아하는 분이라면 <b>강추</b>
+                            <h5>쇼핑과 먹거리 천국</h5>
+                            <p>오사카에서도 맛집이 많은 도톤보리. 부지런히 소화를 시켜야 계속 먹을 수 있다. 유쾌한 간판도 많아 포토존으로도 충분.<br>
+                                신사이바시에는 문구, 의류, 액세서리, 캐릭터, 서점등 없는게 없으니 '텅장 주의보'.
                             </p>
                             <br>
                             <h4>유니버설 스튜디오 재팬</h4>
-                            <div class="box2">
-                                <img src="./" class="imgpos" style="left: 10px;">
-                                <img src="./" class="imgpos" style="top: 10px;right: 0px;">
-                                <img src="./" class="imgpos" style="left: 20px;bottom: 10px;">
-                                <img src="./" class="imgpos" style="right: 0px;bottom: 20px;">
+                            <div class="box4">
+                                <img src="./images/usj01.jpg" class="imgpos" >
+                                <img src="./images/usj02.jpeg" class="imgpos" style="top: 5px;left: 390px;">
+                                <img src="./images/usj03.jpg" class="imgpos" style="left: 30px;bottom: 10px;">
                             </div>
-                            <h5>많은 명소를 구경하며 산책하기 좋은 곳</h5>
-                            <p>다자이후에는 학문의 신 '스와가라노 미치자네'를 모시고 있는 텐만구가 있어서 해마다 입시철이 되면
-                                 합격을 기원하는 많은 참배객이 합격기원 부적 구입을 위해 모인다. 또 오모테산도에는 많은 가게들이 있어 구경거리도 많아 산책하기 좋다.
-                                 <blockquote><i>"카사노야(かさの家)에서 먹은 '우메가에모찌'와 차가 기억에 남는다."</i></blockquote>
-                                 <blockquote><i>※추가로 다자이후 산책 티켓은 왕복기차권과 우메가에모찌 교환권을 준다.</i></blockquote>
+                            <h5>오사카를 대표하는 테마파크</h5>
+                            <p>유명 헐리우드 영화를 테마로 한 공원에서 인생샷도 건지고, 흥미진진한 어트렉션도 놓치지 말자. 
+                                최고 인기는 역시 '스파이더맨 라이드'와 '해리포터 라이드'. 최근에는 슈퍼마리오를 배경으로한 
+                                슈퍼 닌텐도 월드도 개장해 화재가 되었다.
                             </p>
-                            <h4>후쿠오카 타워</h4>
-                            <div class="box3">
-                                <img src="./" class="imgpos" style="left: 0;width: 300px;">
-                                <img src="./" class="imgpos" style="left: 320px;width: 290px;">
+                            <h4>우메다 스카이 빌딩, 헵파이브</h4>
+                            <div class="box4">
+                                <img src="./images/umedasky01.JPG" class="imgpos">
+                                <img src="./images/umedasky02.jpg" class="imgpos" style="left: 320px;width: 300px;top: 10px;">
+                                <img src="./images/umedasky03.JPG" class="imgpos" style="left: 320px;bottom: 10px;width: 300px;">
+                                <img src="./images/umedasky04.JPG" class="imgpos" style="width:300px;bottom: 20px;">
                             </div>
-                            <h5>후쿠오카의 전망을 한눈에 볼 수 있는 랜드마크 타워</h5>
-                            <p>후쿠오카 타워는 시사이드 모모치 해변근처에 있는 높이 234m의 랜드마크이다.
-                                타워 내부의 전망대에서는 끝없이 펼쳐진 하카타 만을 감상할 수 있다. 
-                                <blockquote><i>"버스를 타고 가다 보이는 바다가 아찔했던 기억이있다."</i></blockquote>
+                            <h5>도심 속 공중정원</h5>
+                            <p>지상 40층으로 파리 개선문과 비슷한 모양이다. 최고층의 공중 정원 전망대는 사방이 유리라 멀리는 오사카만 까지 보인다.<br>
+                                또한 우메다에는 대관람차와 대형 오브제 고래로 유명한 헵파이브가 있다. 디즈니 스토어, 짱구, 원피스 등 캐릭터 전문 매장이 모여있고, 또한 20대를 타깃으로 한 중저가 브랜드 상점도 많이 있다.
                             </p>
                             <h2 class="content_title" id="nearby_city">매력적인 근교 도시</h2>
                             <h4>교토</h4>
-                            <div class="box1">
-                                <img src="./" class="imgpos">
-                                <!--벳푸 지고쿠 메구리 등등-->
+                            <div class="box5">
+                                <img src="./images/kyoto01.JPG" class="imgpos">
+                                <img src="./images/kyoto02.JPG" class="imgpos" style="left:410px;">
+                                <img src="./images/kyoto03.JPG" class="imgpos"  style="bottom: 0px;">
+                                <img src="./images/kyoto04.JPG" class="imgpos" style="left:410px;bottom: 0;">
+                                <!--키요미즈데라,금각사,후시미 이나리/고슈인-->
                             </div>
-                            <h5>온천으로 유명한 도시</h5>
-                            <p>벳푸에는 지옥 순례라는 독특하고 다양한 색채와 형태의 7개의 온천을 구경할 수 있다. 
-                                또 근처에는 식도락과 온천을 즐길 수 있는 온천마을인 유후인이 있다.</p>
+                            <h5>과거와 현재가 공존하는 교토</h5>
+                            <p>마치 영화와 같은 일본의 옛 모습이 중첩되는 교토. 1,100년 간 수도 역할을 했던 오랜 역사를 증명하는 듯 수많은 유적들을 품고있는 교토는 도시 전체가 문화유산이라 해도 과하지 않다.
+                                </p>
                             <h4>나라</h4>
-                            <div class="box2">
-                                <img src="./" class="imgpos" style="width: 300px;">
-                                <img src="./" class="imgpos" style="width: 300px;left: 310px;">
-                                <img src="./" class="imgpos" style="width: 300px;bottom: 20px;">
-                                <img src="./" class="imgpos" style="width: 300px;bottom: 20px;left:310px;">
+                            <div class="box6">
+                                <img src="./images/nara01.jpg" class="imgpos" style="top: 10px;">
+                                <img src="./images/nara02.jpg" class="imgpos" style="left: 410px;top: 5px;">
                             </div>
-                            <!--쿠마모토 성(3대성)/쿠마몬/쿠로카와온천/전차-->
-                            <h5>쿠마몬의 고향</h5>
-                            <p>쿠마모토 성은 일본 3대성 중 하나로 2016년 무너져 내려 내부관람이 불가능 했으나 최근들어 관람 가능하게 되었다. 
-                                또한 주변에 아소산, 쿠로카와온천등 가볼곳도 많아 매력적인곳이다. <br>유명한 먹거리로는 바사시(馬刺し)말고기 육회가 있다.
+                            <!--나라공원/도다이지-->
+                            <h5>귀여운 사슴들이 돌아다니는 나라.</h5>
+                            <p>오사카와 교토 근교에 위치하고 있어 잠깐 반나절 정도들리기 좋은 관광지이다. 
+                                나라를 방문하면 꼭 가야 하는 곳이 나라 공원이다. 이곳에선 야생 사슴들이 자유롭게 살아가고 있다. 
+                                공원에서 초록의 자연과 함께 사슴에게 먹이를 주던가 함께 운치있는 산책을 즐길 수 있다.
                             </p>
                             <h4>고베</h4>
-                            <div class="box4">
-                                <img src="./" class="imgpos">
-                                <img src="./" class="imgpos" style="left:410px;">
-                                <img src="./" class="imgpos" style="bottom: 20px;">
+                            <div class="box6">
+                                <img src="./images/kobe01.jpg" class="imgpos">
+                                <img src="./images/kobe02.jpg" class="imgpos" style="left:410px;top: 15px;">
                             </div>
-                            <!--야쿠시마/사쿠라지마/키리시마 -->
-                            <h5>자연환경이 아름다운 그 곳</h5>
-                            <p>온화한 날씨에 소도시의 여유로움, 화산이 만들어낸 웅장한 자연경관을 가진 가고시마는 최고의 힐링여행지이다. 또한 야쿠시마는 원령공주의 배경으로 유명하다.</p>
+                            <!--메리켄파크/ -->
+                            <h5>낭만적인 항구도시 고베</h5>
+                            <p>파도가 잔잔하고 태평양으로 진출하기에 좋은 조건을 갖춘 고베는 예로부터 중국과의 교류 창구 역할을 
+                                했다. 메이지 유신 때의 문화가 그대로 남아 풍경이 이국적이다.
+                            </p>
                     </article>
                     <footer>
                         <br>

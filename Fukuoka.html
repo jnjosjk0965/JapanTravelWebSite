@@ -13,9 +13,9 @@
         <header id="header_content">
             <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
             <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
+                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
+                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
             </ul>
         </header>
         <div id="inner">
@@ -25,9 +25,8 @@
                     <ul>
                         <li>여행지</li>
                         <ul class="region" >
-                            <li><a href="./Fukuoka.html" style="color: #f56a6a;">후쿠오카</a></li>
+                            <li id="clicked"><a href="./Fukuoka.html">후쿠오카</a></li>
                             <li><a href="./Osaka.html" >오사카</a></li>
-                            <li><a href="./Nagoya.html" >나고야</a></li>
                             <li><a href="./Tokyo.html" >도쿄</a></li>
                             <li><a href="./HokkaiDo.html" >홋카이도</a></li>
                         </ul>
@@ -37,16 +36,23 @@
                 <section id="section">
                     <header id="header_article">
                         <h1 class="article_title">후쿠오카</h1>
-                        <img src="./images/fukuoka_main.png" class="img_main" alt="후쿠오카" style="width: 550px;">
+                        <div id="imghd">
+                            <img src="./images/fukuoka_main.png" class="img_main" alt="" style="width: 550px;">
+                            <div id="mapbox" name="hukuoka">
+                                <img src="./images/map/map_hukuoka.png" id="img_map" alt="hukuoka">
+                            </div>
+                        </div>
                         <p style="width: 540px;">한국과 가깝고 저렴해서 기대없이 떠났다가 두 번 가고, 세 번 가고, 철마다 간다는 후쿠오카.
                             그만큼 먹거리와 즐길 거리도 풍성하고 교통도 편리하여 여행 초보자에게 매력이 넘치는 곳. 
                             또한 근교의 도시들도 특색이 넘쳐 볼거리가 풍부하다.</p>
-                            <h4 id="_list">목차</h4>
-                            <ul id="ConList">
-                                <li><a href="#food">먹을거리</a></li>
-                                <li><a href="#sight">관광지</a></li>
-                                <li><a href="#nearby_city">주변 도시</a></li>
-                            </ul>
+                            <div id="libox">
+                                <h4 id="_list">목차</h4>
+                                <ul id="ConList">
+                                    <li><a href="#food">먹을거리</a></li>
+                                    <li><a href="#sight">관광지</a></li>
+                                    <li><a href="#nearby_city">주변 도시</a></li>
+                                </ul>
+                            </div>
                     </header>
                     <article>
                             <h2 class="content_title" id="food">먹을거리</h2>
@@ -116,13 +122,18 @@
                             </p>
                             <h2 class="content_title" id="nearby_city">매력적인 근교 도시</h2>
                             <h4>벳푸</h4>
-                            <div class="box1">
-                                <img src="./images/beppu01.jpeg" class="imgpos">
+                            <div class="box4">
+                                <img src="./images/beppu01.jpeg" class="imgpos" style="width: 350px;" >
+                                <img src="./images/beppu02.JPG" class="imgpos" style="top: 10px;left: 360px;">
+                                <img src="./images/beppu03.JPG" class="imgpos" style="left: 360px;bottom: 10px;">
+                                <img src="./images/beppu04.jpg" class="imgpos"  style="bottom: 0px;left: 20px;width: 330px;">
                                 <!--벳푸 지고쿠 메구리 등등-->
                             </div>
                             <h5>온천으로 유명한 도시</h5>
                             <p>벳푸에는 지옥 순례라는 독특하고 다양한 색채와 형태의 7개의 온천을 구경할 수 있다. 
-                                또 근처에는 식도락과 온천을 즐길 수 있는 온천마을인 유후인이 있다.</p>
+                                또 근처에는 식도락과 온천을 즐길 수 있는 온천마을인 유후인이 있다.
+                                <blockquote><i>"벳푸의 토요츠네에서 먹은 텐동이 기억이 난다."</i></blockquote>
+                            </p>
                             <h4>쿠마모토</h4>
                             <div class="box2">
                                 <img src="./images/kumamoto01.jpg" class="imgpos" style="width: 300px;">
