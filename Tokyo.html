@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>후쿠오카</title>
+    <title>도쿄 알아보기</title>
     <link rel="stylesheet" href="./FinalTest.css">
 </head>
 <body>
@@ -11,40 +11,38 @@
         <!--header 영역-->
         <div id="header_bg"></div>
         <header id="header_content">
-            <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
-            <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
-            </ul>
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>    
+                <ul class="region" >
+                    <li><a href="./Fukuoka.html">후쿠오카</a></li>
+                    <li><a href="./Osaka.html" >오사카</a></li>
+                    <li id="clicked"><a href="./Tokyo.html" >도쿄</a></li>
+                    <li><a href="./HokkaiDo.html" >홋카이도</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="inner">
             <div id="container">
-                <!--nav 영역-->
-                <nav id="nav">
-                    <ul>
-                        <li>여행지</li>
-                        <ul class="region" >
-                            <li id="clicked"><a href="./Fukuoka.html">후쿠오카</a></li>
-                            <li><a href="./Osaka.html" >오사카</a></li>
-                            <li><a href="./Tokyo.html" >도쿄</a></li>
-                            <li><a href="./HokkaiDo.html" >홋카이도</a></li>
-                        </ul>
-                    </ul>
-                </nav>
                 <!--main content 영역-->
                 <section id="section">
                     <header id="header_article">
-                        <h1 class="article_title">후쿠오카</h1>
+                        <h1 class="article_title">도쿄</h1>
                         <div id="imghd">
                             <img src="./images/fukuoka_main.png" class="img_main" alt="" style="width: 550px;">
-                            <div id="mapbox" name="hukuoka">
-                                <img src="./images/map/map_hukuoka.png" id="img_map" alt="hukuoka">
+                            <div id="mapbox" name="Tokyo">
+                                <img src="./images/map/map_tokyo.png" id="img_map" alt="Tokyo">
                             </div>
                         </div>
-                        <p style="width: 540px;">한국과 가깝고 저렴해서 기대없이 떠났다가 두 번 가고, 세 번 가고, 철마다 간다는 후쿠오카.
-                            그만큼 먹거리와 즐길 거리도 풍성하고 교통도 편리하여 여행 초보자에게 매력이 넘치는 곳. 
-                            또한 근교의 도시들도 특색이 넘쳐 볼거리가 풍부하다.</p>
+                        <p style="width: 540px;">도쿄는 일본의 수도로 정치, 경제, 문화의 중심지로 그 안에는 시부야, 아키하바라, 이케부쿠로 등
+                        수 많은 개성적인 지역으로 구성되 있다. 다채로운 모습이 기다리는 도쿄. 지금부터 도쿄의 매력을 알아보자.</p>
                             <div id="libox">
                                 <h4 id="_list">목차</h4>
                                 <ul id="ConList">
@@ -56,25 +54,26 @@
                     </header>
                     <article>
                             <h2 class="content_title" id="food">먹을거리</h2>
-                            <h4>하카다 라멘</h4>
+                            <p>도쿄는 수도인만큼 다양한 먹거리를 먹을 수 있어 여기서는, 도쿄의 로컬음식을 추천했습니다.</p>
+                            <h4>에도마에즈시</h4>
                             <img src="./images/hakata_ramen.jpg" class="img_main">
                             <p>일본 대표 메뉴인 라멘. 3대 라면중 하나인 하카타 라멘은 진하게 우려낸 돼지뼈 국물의 돈코츠 라멘이다. 깔끔한 맛의 뿌연 육수에 가늘지만 탄력 있는 면이 특징. 고명으로 올라가는 챠슈(얇게 썬 돼지고기)가 사르르 녹는다.
                                 유명 체인으로는 이치란(一蘭),잇푸도(一風堂)가 있다.
                             </p>
-                            <h4>모츠나베</h4>
+                            <h4>소바</h4>
                             <img src="./images/motunabe.jpg" class="img_main">
                             <p>일본식 곱창전골. 소의 내장(모츠)을 넣어 만든 나베 요리. 곱창과 부추, 양배추 등 채소와 완자를 넣고 간장이나 된장으로 맛을 내 푹 끓여 먹는다. 곱창을 다 먹고 남은 국물에 국수를 말아 먹는 것도 잊지 말자.</p>
-                            <h4>미즈타키</h4>
+                            <h4>몬쟈야키</h4>
                             <img src="./images/mizutaki.png" class="img_main">
                             <p>후쿠오카 대표 향토요리. 닭고기를 푹 우려낸 국물이 닭곰탕과 비슷한데 샤브샤브처럼 먹는 게 특이하다. 미즈타키는 먼저 국물에 소금을 조금만 넣어 깊은 맛을 충분히 즐긴 다음, 닭고기와 양배추를 소스와 함께 먹는다. 마지막으로 밥을 넣고 끓여 죽으로 즐긴다.</p>
-                            <h4>고보텐 우동</h4>
+                            <h4>후카가와 메시</h4>
                             <img src="./images/gobouten_udon.jpg" class="img_main">
                             <p>넙적하고 부드러운 면에 우엉튀김(고보텐)을 얻은 후쿠오카 대표 우동. 일본 우동의 발상지답게 가츠오부시와 해산물로 맛을 낸 국물이 일품.</p>
-                            <h4>후쿠오카 함바그</h4>
+                            <h4>챵코나베</h4>
                             <img src="./images/hukuoka_hamberg.png" class="img_main">
                             <p>어쩌면 후쿠오카를 떠올릴때 가장 먼저 생각 나는 메뉴. 서양에서 들어온 햄버그 스테이크를 일본식으로 만든 것이다. 함바그에 동양식으로 밥, 된장국을 곁들여 먹으며, 자신의 취향에 맞게 다양한 소스나 사이드, 토핑을 선택할 수 있어서 좋다. 특정 전문점들은 생 함바그를 개인 돌판에 직접 구워먹는 방식으로 유명하다.</p>
                             <h2 class="content_title" id="sight">관광지</h2>
-                            <h4>커낼시티 하카타</h4>
+                            <h4>신주쿠,시부야</h4>
                             <div class="box1">
                             <img src="./images/canalcity02.jpg" class="imgpos" style="z-index: 10;">
                             <img src="./images/canalcity01.jpg" class="imgpos" style="top: 5px;right: 25px;">
@@ -85,7 +84,7 @@
                                 매일 분수쇼가 열리는 180m 길이의 운하가 있는 것으로 유명하다.
                             </p>
                             <br>
-                            <h4>텐진</h4>
+                            <h4>오다이바</h4>
                             <div class="box1">
                                 <img src="./images/tenjin01.jpg" class="imgpos" style="z-index: 15;">
                                 <img src="./images/tenjin02.jpg" class="imgpos" style="left: 50px;bottom: 5px;">
@@ -97,7 +96,7 @@
                                 약 590m의 지하상가에 1000여개의 매장이 늘어서있어 쇼핑을 좋아하는 분이라면 <b>강추</b>
                             </p>
                             <br>
-                            <h4>다자이후</h4>
+                            <h4>센쇼지</h4>
                             <div class="box2">
                                 <img src="./images/dazaihu02.jpg" class="imgpos" style="left: 10px;">
                                 <img src="./images/dazaihu01.jpg" class="imgpos" style="top: 10px;right: 0px;">
@@ -110,7 +109,7 @@
                                  <blockquote><i>"카사노야(かさの家)에서 먹은 '우메가에모찌'와 차가 기억에 남는다."</i></blockquote>
                                  <blockquote><i>※추가로 다자이후 산책 티켓은 왕복기차권과 우메가에모찌 교환권을 준다.</i></blockquote>
                             </p>
-                            <h4>후쿠오카 타워</h4>
+                            <h4>도쿄 스카이트리</h4>
                             <div class="box3">
                                 <img src="./images/hukuokatower01.jpg" class="imgpos" style="left: 0;width: 300px;">
                                 <img src="./images/hukuokatower02.jpg" class="imgpos" style="left: 320px;width: 290px;">
@@ -121,7 +120,7 @@
                                 <blockquote><i>"버스를 타고 가다 보이는 바다가 아찔했던 기억이있다."</i></blockquote>
                             </p>
                             <h2 class="content_title" id="nearby_city">매력적인 근교 도시</h2>
-                            <h4>벳푸</h4>
+                            <h4>하코네</h4>
                             <div class="box4">
                                 <img src="./images/beppu01.jpeg" class="imgpos" style="width: 350px;" >
                                 <img src="./images/beppu02.JPG" class="imgpos" style="top: 10px;left: 360px;">
@@ -134,7 +133,7 @@
                                 또 근처에는 식도락과 온천을 즐길 수 있는 온천마을인 유후인이 있다.
                                 <blockquote><i>"벳푸의 토요츠네에서 먹은 텐동이 기억이 난다."</i></blockquote>
                             </p>
-                            <h4>쿠마모토</h4>
+                            <h4>가마쿠라, 에노시마</h4>
                             <div class="box2">
                                 <img src="./images/kumamoto01.jpg" class="imgpos" style="width: 300px;">
                                 <img src="./images/kumamoto02.jpg" class="imgpos" style="width: 300px;left: 310px;">
@@ -146,7 +145,7 @@
                             <p>쿠마모토 성은 일본 3대성 중 하나로 2016년 무너져 내려 내부관람이 불가능 했으나 최근들어 관람 가능하게 되었다. 
                                 또한 주변에 아소산, 쿠로카와온천등 가볼곳도 많아 매력적인곳이다. <br>유명한 먹거리로는 바사시(馬刺し)말고기 육회가 있다.
                             </p>
-                            <h4>가고시마</h4>
+                            <h4>야마나시</h4>
                             <div class="box4">
                                 <img src="./images/kagosima01.png" class="imgpos">
                                 <img src="./images/kagosima02.png" class="imgpos" style="left:410px;">
@@ -156,15 +155,17 @@
                             <h5>자연환경이 아름다운 그 곳</h5>
                             <p>온화한 날씨에 소도시의 여유로움, 화산이 만들어낸 웅장한 자연경관을 가진 가고시마는 최고의 힐링여행지이다. 또한 야쿠시마는 원령공주의 배경으로 유명하다.</p>
                     </article>
-                    <footer>
-                        <br>
+                    <footer id="con_foot">
+                        <h5 class="foot_title">추천 웹사이트</h5>
+                        <a href="https://www.gotokyo.org/kr/index.html" target="_blank" class="foot_link">Go Tokyo</a>
+                        <p style="margin-top: 10px;">도쿄시 공식 관광사이트</p>
                     </footer>
                 </section>
                 <aside id="aside">
                     <h4 id="aside_title">Google 지도</h4>
                     <div class="map">
-                    <!--하카타역-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.18857788148!2d130.4123681942826!3d33.58988170990646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z7ZWY7Lm07YOA!5e0!3m2!1sko!2skr!4v1654448418940!5m2!1sko!2skr" width="351" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--신주쿠-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.43701273871!2d139.69237469795587!3d35.68393262223323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z7Iug7KO87L-g!5e0!3m2!1sko!2skr!4v1655051523188!5m2!1sko!2skr" width="446px" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </aside>
             </div>

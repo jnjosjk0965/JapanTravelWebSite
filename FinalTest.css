@@ -2,15 +2,13 @@
 * {
     box-sizing: border-box; 
 }
-body, fieldset, h1, h2, h3, h4, h5, h6,
-input, legend, p, table, td, th, ol, ul, li, img{
+body, h1, h2, h3, h4, h5, h6, p, ul, li, img{
     margin: 0px;
     padding: 0;
     border: 0px;
     font: inherit;
 }
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
+article, aside, footer, header, nav, section {
     display: block; 
 }
 body{
@@ -27,22 +25,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 h1{
-    font-size: 3.5em;
+    font-size: 3.8em;
 }
 h2 {
-    font-size: 2.9em; }
+    font-size: 3.2em; }
   
 h3 {
-    font-size: 2.4em; }
+    font-size: 2.6em; }
   
 h4 {
-    font-size: 1.8em; }
+    font-size: 2em; }
   
 h5 {
-    font-size: 1.4em; }
+    font-size: 1.6em; }
   
 h6 {
-    font-size: 0.9em; }
+    font-size: 1em; }
 ol,ul{
     list-style: none;
 }
@@ -58,7 +56,7 @@ a {
     color: #fafbfc;
     text-decoration: none;
 }
-    a:active {
+    a:hover {
         border-bottom-color: #f56a6a;
         color: #f56a6a !important; 
     }
@@ -73,7 +71,7 @@ ul.icons {
 ul.icons li {
     display: inline-block;
     padding: 0 0.5em 0 0.5em; 
-    border-right: 2px solid #212121;
+    border-right: 2px solid #d1d1d1;
 }
 ul.icons li:last-child {
     padding-right: 0; 
@@ -86,13 +84,13 @@ ul.icons li:last-child {
 
 /*image*/
 img{
-    border-radius: 0.375em;
     border: 0;
     display: inline-block;
     position: relative;
 }
 .img_main{
-    max-width: 570px;
+    border-radius: 0.375em;
+    max-width: 650px;
     box-shadow: 1px 1px 5px #a1a2a3;
     margin: 0.5rem 0 1em 0;
     z-index: 2;
@@ -140,18 +138,19 @@ img{
     overflow: hidden;
 }
 #mapbox {
+    margin: 10px 60px 0 0;
     position: relative;
     overflow: hidden;
-    width: 240px;
-    height: 305px;
+    width: 280px;
+    height: 316px;
     float: right;
     border: 2px solid #fafbfc55;
     border-radius: 10px;
 }
 #img_map {
     position: absolute;
-    width: 240px;
-    height: 303px;
+    width: 280px;
+    height: 316px;
     z-index: 1;
     transition: all 1.5s;
 }
@@ -165,6 +164,16 @@ img{
     top: -150px;
     right: -50px;
 }
+#mapbox[name="Tokyo"]:hover #img_map {
+    transform: scale(2);
+    top: -100px;
+    right: 30px;
+}
+#mapbox[name="HokkaiDo"]:hover #img_map {
+    transform: scale(2);
+    top: 140px;
+    right: 110px;
+}
 /*wrap*/
 
 #wrap{
@@ -174,124 +183,159 @@ img{
     width: 1600px;
     margin: 0 auto;
     overflow: hidden;
-    border: 1px solid #b1b2b3;
     border-bottom: 0;
     }
 
 /*header*/
 
 #header_main{
+    height: 100vh;
     margin: 0 auto;
     border-bottom: solid 8px #f56a6a;
-    padding: 24em 0 4em 0;
+    padding: 0 0 4em 0;
     position: relative;
-    background-image: url(./images/bg_header_japan.png);
+    background-image: url(./images/bg_japan.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
+}
+#head_box {
+    width: 500px;
+    height: 40vh;
+    margin: 20vh auto 0 auto;
+    border: 4px solid #feeeee;
+    background-color: #000000aa;
+    position: relative;
+    transition: all 1s;
+}
+#head_box:hover {
+    transform: scale(1.05);
+}
+.box>h1, .box>p {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+#head_box .box {
+    width: 360px;
+    height: 200px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-180px;
+    margin-top:-100px;
 }
 #header_content{
     margin: 0 auto;
     border-bottom: solid 5px #f56a6a;
-    padding: 10em 0 1.5em 0;
+    padding: 0 0 11.5em 0;
     position: relative;
-    
 }
 #header_bg {
-    background-image: url(./images/bg_header_japan.png);
+    background-image: url(./images/bg_header_content_japan.png);
     background-repeat: no-repeat;
     background-size: cover ;
     width: 100%;
-    height: 14em;
+    height: 296.6px;
     position: absolute;
     filter: blur(3px);
 }
-header .logo {
-    margin-left: 2em;
+
+/*nav*/
+
+#nav{
+    position: relative;
+    overflow: hidden;
+    width: 94%;
+    margin: 0 auto;
+    background-color: #000000aa;
+    padding: 18px 5px 38px 5px;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.1em;
+}
+/*neon effect*/
+@keyframes neon {
+	from {
+		text-shadow: 0 0 8px #b1b2b3,
+					 0 0 16px #b1b2b3,
+					 0 0 24px #b1b2b3,
+					 0 0 32px #f56a6a,
+					 0 0 56px #f56a6a,
+					 0 0 64px #f56a6a,
+					 0 0 76px #f56a6a,
+					 0 0 90px #f56a6a;
+	}
+	to {
+		text-shadow: 0 0 4px #b1b2b3,
+                     0 0 8px #b1b2b3,
+                     0 0 12px #b1b2b3,
+                     0 0 16px #f56a6a,
+                     0 0 24px #f56a6a,
+                     0 0 30px #f56a6a,
+                     0 0 36px #f56a6a,
+                     0 0 45px #f56a6a;
+	}
+}
+#nav .logo {
+    display: inline;
+    float: left;
+    margin-left: 1em;
     border-bottom: 0;
-    color: #212121;
+    text-shadow: 3px 3px 1px #212121,
+                0px 0px 5px #d1d1d1;
     font-family: "Jua","Roboto Slab", serif;
     font-size: 2.5em;
 }
-header .icons {
+#icon_box {
+    overflow: hidden;
+}
+#icon_box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav .icons {
     float: right;
     text-align: center;
     font-weight: 600;
-    background-color: #b1b2b377;
-    margin-right: 20px;
+    margin-right: 25px;
 }
-header .icons a {
+#nav .icons a {
     border: none;
     font-family: "Jua","Roboto Slab", serif;
     font-weight: 300;
     font-size: 18px;
+}
+#nav .region {
+    min-width: 40%;
+    max-width: 70%;
+    margin: 10px 0 0 320px;
+}
+#nav .region a {
+    border: none;
+}
+#nav .region li{
+    display: inline;
+    margin: 0 4% 0 4%;
+    font-size: 1.5em;
+	transition: all 0.4s;
+	animation: neon 2.5s ease-in-out infinite alternate;
+}
+#nav ul.region li:hover {
+    font-size: 1.8em;
+}
+#clicked a{
+    color: #f56a6a;
 }
 /*container*/
 
 #container{
     overflow: hidden;
     position: relative;
+    border: 1px solid #b1b2b3;
     background-color: #212121;
     height: 100%;
     font-family: 'Nanum Gothic', sans-serif;
 }
-/*nav*/
 
-#nav{
-    float: left;
-    position: relative;
-    width: 320px;
-    padding-top: 25px;
-    font-family: 'Jua', sans-serif;
-    font-size: 1.1em;
-}
-#nav > ul > li{
-    margin: 0 30px 0 10px;
-    font-size: 2.5em;
-    padding: 10px 0 8px 0.5em;
-    border-bottom: 2px solid #f56a6a;
-}
-/*neon effect*/
-@keyframes neon {
-	from {
-		text-shadow: 0 0 5px #b1b2b3,
-					 0 0 9px #b1b2b3,
-					 0 0 13px #b1b2b3,
-					 0 0 19px #f56a6a,
-					 0 0 25px #f56a6a,
-					 0 0 32px #f56a6a,
-					 0 0 42px #f56a6a,
-					 0 0 56px #f56a6a;
-	}
-	to {
-		text-shadow: 0 0 3px #b1b2b3,
-                     0 0 6px #b1b2b3,
-                     0 0 9px #b1b2b3,
-                     0 0 12px #f56a6a,
-                     0 0 16px #f56a6a,
-                     0 0 20px #f56a6a,
-                     0 0 24px #f56a6a,
-                     0 0 28px #f56a6a;
-	}
-}
-#nav ul.region a {
-    border: none;
-    font-size: 1.3em;
-}
-#nav ul.region li{
-    margin-top: 18px;
-    padding: 5px 0 5px 35px;
-	transition: all 0.5s;
-	animation: neon 2.5s ease-in-out infinite alternate;
-}
-#nav ul.region li:hover {
-    font-size: 1.3em;
-}
-#clicked {
-    font-size: 1.3em;
-}
-#clicked a{
-    color: #f56a6a;
-}
 /*section*/
 
 #section{
@@ -300,8 +344,8 @@ header .icons a {
     float: left;
     border-left: 2px solid #f56a6a;
     border-right: 2px solid #f56a6a;
-    padding: 25px 40px 0 40px;
-    width: 900px;
+    padding: 40px 60px 0 60px;
+    width: 1100px;
     min-height: inherit;
 }
 #section p{
@@ -319,10 +363,29 @@ header .icons a {
     padding-bottom: 24px;
     border-bottom: 2px solid #f56a6a;
 }
+article h4 {
+    margin-top: 60px;
+}
 .content_title {
     border-bottom: 1px solid #f56a6a;
     margin: 1.2em 0 0.8em;
     padding-bottom: 5px;
+}
+#con_foot {
+    position: relative;
+    margin-top: 50px;
+    height: 120px;
+}
+.foot_title {
+    border-bottom: 1px solid #f56a6a;
+    margin-bottom: 20px;
+}
+.foot_link {
+    font-size: 24px;
+    border-bottom: 1px solid;
+}
+.foot_link:hover {
+    color: #d54a4a;
 }
 #libox {
     border: 1px solid #b1b2b3;
@@ -331,8 +394,8 @@ header .icons a {
 }
 /*aside*/
 #aside {
-    width: 375px;
-    padding: 70px 10px 0 10px;
+    width: 480px;
+    padding: 70px 10px 0 20px;
     float: left;
     position: relative;
 }
@@ -343,6 +406,7 @@ header .icons a {
     filter: grayscale(0.2);
     box-shadow: 2px 2px 30px rgba(140, 140, 140, 0.5);
     border: 2px solid #ffffff;
+    height: 354px;
  }
 /*nav-control*/
 
@@ -369,6 +433,7 @@ header .icons a {
 
 #footer{
     background-color: #101010;
+    margin-top: 15px;
     border-top: 1px solid #b1b2b3;
     padding-top: 10px;
     height: 8em;

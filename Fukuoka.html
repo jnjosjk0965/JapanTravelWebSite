@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>후쿠오카</title>
+    <title>후쿠오카 알아보기</title>
     <link rel="stylesheet" href="./FinalTest.css">
 </head>
 <body>
@@ -11,27 +11,26 @@
         <!--header 영역-->
         <div id="header_bg"></div>
         <header id="header_content">
-            <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
-            <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
-            </ul>
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>    
+                <ul class="region" >
+                    <li id="clicked"><a href="./Fukuoka.html">후쿠오카</a></li>
+                    <li><a href="./Osaka.html" >오사카</a></li>
+                    <li><a href="./Tokyo.html" >도쿄</a></li>
+                    <li><a href="./HokkaiDo.html" >홋카이도</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="inner">
             <div id="container">
-                <!--nav 영역-->
-                <nav id="nav">
-                    <ul>
-                        <li>여행지</li>
-                        <ul class="region" >
-                            <li id="clicked"><a href="./Fukuoka.html">후쿠오카</a></li>
-                            <li><a href="./Osaka.html" >오사카</a></li>
-                            <li><a href="./Tokyo.html" >도쿄</a></li>
-                            <li><a href="./HokkaiDo.html" >홋카이도</a></li>
-                        </ul>
-                    </ul>
-                </nav>
                 <!--main content 영역-->
                 <section id="section">
                     <header id="header_article">
@@ -76,9 +75,9 @@
                             <h2 class="content_title" id="sight">관광지</h2>
                             <h4>커낼시티 하카타</h4>
                             <div class="box1">
-                            <img src="./images/canalcity02.jpg" class="imgpos" style="z-index: 10;">
-                            <img src="./images/canalcity01.jpg" class="imgpos" style="top: 5px;right: 25px;">
-                            <img src="./images/canalcity03.jpg" class="imgpos" style="z-index: 12;bottom: 5px;right: 130px;">
+                            <img src="./images/canalcity02.jpg" class="imgpos" style="width: 500px;left: 403px;">
+                            <img src="./images/canalcity01.jpg" class="imgpos" >
+                            <img src="./images/canalcity03.jpg" class="imgpos" style="bottom: 6px;">
                             </div>
                             <h5>쇼핑과 엔터테인먼트를 동시에 즐길 수 있는 복합 상업시설</h5>
                             <p>다양한 브랜드 매장과 레스토랑, 각종 엔터테인먼트 시설이 모여 있는 하카타 지역 대표 복합 상업 시설
@@ -86,10 +85,11 @@
                             </p>
                             <br>
                             <h4>텐진</h4>
-                            <div class="box1">
-                                <img src="./images/tenjin01.jpg" class="imgpos" style="z-index: 15;">
-                                <img src="./images/tenjin02.jpg" class="imgpos" style="left: 50px;bottom: 5px;">
-                                <img src="./images/tenjin03.jpg" class="imgpos" style="width: 380px;right: 30px;">
+                            <div class="box4">
+                                <img src="./images/tenjin01.jpg" class="imgpos" style="bottom: 0px;left: 287px;">
+                                <img src="./images/tenjin02.jpg" class="imgpos" style="width: 415px;">
+                                <img src="./images/tenjin03.jpg" class="imgpos" style="width: 415px;left: 418px;">
+                                <img src="./images/tenjin04.jpg" class="imgpos" style="width: 284px;bottom: 0px;">
                             </div>
                             <h5>맛집 탐방과 쇼핑을 함께 즐길 수 있는 번화가</h5>
                             <p>텐진은 후쿠오카 제일의 번화가로 다양한 물품을 파는 가게들과 백화점이 밀집해있다. 
@@ -99,10 +99,10 @@
                             <br>
                             <h4>다자이후</h4>
                             <div class="box2">
-                                <img src="./images/dazaihu02.jpg" class="imgpos" style="left: 10px;">
-                                <img src="./images/dazaihu01.jpg" class="imgpos" style="top: 10px;right: 0px;">
-                                <img src="./images/dazaihu03.jpg" class="imgpos" style="left: 20px;bottom: 10px;">
-                                <img src="./images/dazaihu04.jpg" class="imgpos" style="right: 0px;bottom: 20px;">
+                                <img src="./images/dazaihu02.jpg" class="imgpos" >
+                                <img src="./images/dazaihu01.jpg" class="imgpos" style="left: 403px;">
+                                <img src="./images/dazaihu03.jpg" class="imgpos" style="bottom: 8px;">
+                                <img src="./images/dazaihu04.jpg" class="imgpos" style="left: 403px;bottom: 25px;">
                             </div>
                             <h5>많은 명소를 구경하며 산책하기 좋은 곳</h5>
                             <p>다자이후에는 학문의 신 '스와가라노 미치자네'를 모시고 있는 텐만구가 있어서 해마다 입시철이 되면
@@ -112,8 +112,8 @@
                             </p>
                             <h4>후쿠오카 타워</h4>
                             <div class="box3">
-                                <img src="./images/hukuokatower01.jpg" class="imgpos" style="left: 0;width: 300px;">
-                                <img src="./images/hukuokatower02.jpg" class="imgpos" style="left: 320px;width: 290px;">
+                                <img src="./images/hukuokatower01.jpg" class="imgpos" style="width: 300px;">
+                                <img src="./images/hukuokatower02.jpg" class="imgpos" style="left: 303px;width: 290px;">
                             </div>
                             <h5>후쿠오카의 전망을 한눈에 볼 수 있는 랜드마크 타워</h5>
                             <p>후쿠오카 타워는 시사이드 모모치 해변근처에 있는 높이 234m의 랜드마크이다.
@@ -122,11 +122,11 @@
                             </p>
                             <h2 class="content_title" id="nearby_city">매력적인 근교 도시</h2>
                             <h4>벳푸</h4>
-                            <div class="box4">
+                            <div class="box4" style="height: 500px;">
                                 <img src="./images/beppu01.jpeg" class="imgpos" style="width: 350px;" >
-                                <img src="./images/beppu02.JPG" class="imgpos" style="top: 10px;left: 360px;">
-                                <img src="./images/beppu03.JPG" class="imgpos" style="left: 360px;bottom: 10px;">
-                                <img src="./images/beppu04.jpg" class="imgpos"  style="bottom: 0px;left: 20px;width: 330px;">
+                                <img src="./images/beppu02.JPG" class="imgpos" style="top: 9px;left: 353px;">
+                                <img src="./images/beppu03.JPG" class="imgpos" style="left: 353px;bottom: 35px;">
+                                <img src="./images/beppu04.jpg" class="imgpos"  style="bottom: 22px;left: 20px;width: 330px;">
                                 <!--벳푸 지고쿠 메구리 등등-->
                             </div>
                             <h5>온천으로 유명한 도시</h5>
@@ -156,15 +156,15 @@
                             <h5>자연환경이 아름다운 그 곳</h5>
                             <p>온화한 날씨에 소도시의 여유로움, 화산이 만들어낸 웅장한 자연경관을 가진 가고시마는 최고의 힐링여행지이다. 또한 야쿠시마는 원령공주의 배경으로 유명하다.</p>
                     </article>
-                    <footer>
-                        <br>
+                    <footer id="con_foot">
+                        
                     </footer>
                 </section>
                 <aside id="aside">
                     <h4 id="aside_title">Google 지도</h4>
                     <div class="map">
                     <!--하카타역-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.18857788148!2d130.4123681942826!3d33.58988170990646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z7ZWY7Lm07YOA!5e0!3m2!1sko!2skr!4v1654448418940!5m2!1sko!2skr" width="351" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.18857788148!2d130.4123681942826!3d33.58988170990646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z7ZWY7Lm07YOA!5e0!3m2!1sko!2skr!4v1654448418940!5m2!1sko!2skr" width="446px" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </aside>
             </div>

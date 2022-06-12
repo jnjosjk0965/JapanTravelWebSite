@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>오사카</title>
+    <title>오사카 알아보기</title>
     <link rel="stylesheet" href="./FinalTest.css">
 </head>
 <body>
@@ -11,27 +11,26 @@
         <!--header 영역-->
         <div id="header_bg"></div>
         <header id="header_content">
-            <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
-            <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
-            </ul>
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>    
+                <ul class="region" >
+                    <li><a href="./Fukuoka.html">후쿠오카</a></li>
+                    <li id="clicked"><a href="./Osaka.html" >오사카</a></li>
+                    <li><a href="./Tokyo.html" >도쿄</a></li>
+                    <li><a href="./HokkaiDo.html" >홋카이도</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="inner">
             <div id="container">
-                <!--nav 영역-->
-                <nav id="nav">
-                    <ul>
-                        <li>여행지</li>
-                        <ul class="region" >
-                            <li><a href="./Fukuoka.html" >후쿠오카</a></li>
-                            <li id="clicked"><a href="./Osaka.html">오사카</a></li>
-                            <li><a href="./Tokyo.html" >도쿄</a></li>
-                            <li><a href="./HokkaiDo.html" >홋카이도</a></li>
-                        </ul>
-                    </ul>
-                </nav>
                 <!--main content 영역-->
                 <section id="section">
                     <header id="header_article">
@@ -77,8 +76,8 @@
                             <h4>오사카 성</h4>
                             <div class="box2">
                             <img src="./images/osakacastle01.JPG" class="imgpos" >
-                            <img src="./images/osakacastle02.JPG" class="imgpos" style="top: 0px;left: 410px;">
-                            <img src="./images/osakacastle03.JPG" class="imgpos" style="top: 280px;left: 410px;">
+                            <img src="./images/osakacastle02.JPG" class="imgpos" style="top: 0px;left: 403px;">
+                            <img src="./images/osakacastle03.JPG" class="imgpos" style="top: 262px;left: 403px;">
                             </div>
                             <h5>일본 3대 성 중 하나</h5>
                             <p>오사카 관광명소로 손꼽히는 대표적인 곳 오사카성입니다. 봄에는 벚꽃이 만개하여 벚꽃놀이 가기 좋은 여행지고,
@@ -87,11 +86,11 @@
                             </p>
                             <br>
                             <h4>도톤보리, 신사이바시</h4>
-                            <div class="box5">
+                            <div class="box5" style="height: 560px;">
                                 <img src="./images/dotonbori01.JPG" class="imgpos" style="top: 10px;">
-                                <img src="./images/dotonbori03.png" class="imgpos" style="left: 410px;bottom: 10px;">
-                                <img src="./images/dotonbori02.JPG" class="imgpos" style="width: 380px;left: 410px;">
-                                <img src="./images/dotonbori04.JPG" class="imgpos" style="bottom:0px;width:360px;left: 40px;">
+                                <img src="./images/dotonbori03.png" class="imgpos" style="left: 403px;bottom: 34px;">
+                                <img src="./images/dotonbori02.JPG" class="imgpos" style="width: 380px;left: 403px;">
+                                <img src="./images/dotonbori04.JPG" class="imgpos" style="bottom: 22px;width:360px;left: 40px;">
                             </div>
                             <h5>쇼핑과 먹거리 천국</h5>
                             <p>오사카에서도 맛집이 많은 도톤보리. 부지런히 소화를 시켜야 계속 먹을 수 있다. 유쾌한 간판도 많아 포토존으로도 충분.<br>
@@ -99,10 +98,10 @@
                             </p>
                             <br>
                             <h4>유니버설 스튜디오 재팬</h4>
-                            <div class="box4">
+                            <div class="box5">
                                 <img src="./images/usj01.jpg" class="imgpos" >
                                 <img src="./images/usj02.jpeg" class="imgpos" style="top: 5px;left: 390px;">
-                                <img src="./images/usj03.jpg" class="imgpos" style="left: 30px;bottom: 10px;">
+                                <img src="./images/usj03.jpg" class="imgpos" style="left: 30px;bottom: 15px;">
                             </div>
                             <h5>오사카를 대표하는 테마파크</h5>
                             <p>유명 헐리우드 영화를 테마로 한 공원에서 인생샷도 건지고, 흥미진진한 어트렉션도 놓치지 말자. 
@@ -122,11 +121,11 @@
                             </p>
                             <h2 class="content_title" id="nearby_city">매력적인 근교 도시</h2>
                             <h4>교토</h4>
-                            <div class="box5">
-                                <img src="./images/kyoto01.JPG" class="imgpos">
-                                <img src="./images/kyoto02.JPG" class="imgpos" style="left:410px;">
-                                <img src="./images/kyoto03.JPG" class="imgpos"  style="bottom: 0px;">
-                                <img src="./images/kyoto04.JPG" class="imgpos" style="left:410px;bottom: 0;">
+                            <div class="box2" style="height:610px">
+                                <img src="./images/kyoto01.JPG" class="imgpos" style="top: 20px;">
+                                <img src="./images/kyoto02.JPG" class="imgpos" style="left:403px;">
+                                <img src="./images/kyoto03.JPG" class="imgpos"  style="left: 20px;bottom: 50px;">
+                                <img src="./images/kyoto04.JPG" class="imgpos" style="left:423px;bottom: 70px;">
                                 <!--키요미즈데라,금각사,후시미 이나리/고슈인-->
                             </div>
                             <h5>과거와 현재가 공존하는 교토</h5>
@@ -135,7 +134,7 @@
                             <h4>나라</h4>
                             <div class="box6">
                                 <img src="./images/nara01.jpg" class="imgpos" style="top: 10px;">
-                                <img src="./images/nara02.jpg" class="imgpos" style="left: 410px;top: 5px;">
+                                <img src="./images/nara02.jpg" class="imgpos" style="left: 403px;top: 5px;">
                             </div>
                             <!--나라공원/도다이지-->
                             <h5>귀여운 사슴들이 돌아다니는 나라.</h5>
@@ -146,7 +145,7 @@
                             <h4>고베</h4>
                             <div class="box6">
                                 <img src="./images/kobe01.jpg" class="imgpos">
-                                <img src="./images/kobe02.jpg" class="imgpos" style="left:410px;top: 15px;">
+                                <img src="./images/kobe02.jpg" class="imgpos" style="left:403px;top: 16px;">
                             </div>
                             <!--메리켄파크/ -->
                             <h5>낭만적인 항구도시 고베</h5>
@@ -154,15 +153,15 @@
                                 했다. 메이지 유신 때의 문화가 그대로 남아 풍경이 이국적이다.
                             </p>
                     </article>
-                    <footer>
-                        <br>
+                    <footer id="con_foot">
+                        
                     </footer>
                 </section>
                 <aside id="aside">
                     <h4 id="aside_title">Google 지도</h4>
                     <div class="map">
                     <!--하카타역-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.056692031543!2d135.52169924924414!3d34.68577201500739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf01d07d5ca11e41!2z7Jik7IKs7Lm0IOyEsQ!5e0!3m2!1sko!2skr!4v1654710219171!5m2!1sko!2skr" width="351px" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.056692031543!2d135.52169924924414!3d34.68577201500739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf01d07d5ca11e41!2z7Jik7IKs7Lm0IOyEsQ!5e0!3m2!1sko!2skr!4v1654710219171!5m2!1sko!2skr" width="446px" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </aside>
             </div>

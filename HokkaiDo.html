@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>오사카</title>
+    <title>홋카이도 알아보기</title>
     <link rel="stylesheet" href="./FinalTest.css">
 </head>
 <body>
@@ -11,70 +11,72 @@
         <!--header 영역-->
         <div id="header_bg"></div>
         <header id="header_content">
-            <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
-            <ul class="icons">
-                <li><a href="https://www.airbnb.co.kr/" target="_blank" title="에어비엔비">에어비엔비</a></li>
-                <li><a href="https://tabelog.com/kr/" target="_blank" title="타베로그">타베로그</a></li>
-                <li><a href="https://papago.naver.com/" target="_blank" title="파파고">파파고</a></li>
-            </ul>
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>    
+                <ul class="region" >
+                    <li><a href="./Fukuoka.html">후쿠오카</a></li>
+                    <li><a href="./Osaka.html" >오사카</a></li>
+                    <li><a href="./Tokyo.html" >도쿄</a></li>
+                    <li id="clicked"><a href="./HokkaiDo.html" >홋카이도</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="inner">
             <div id="container">
-                <!--nav 영역-->
-                <nav id="nav">
-                    <ul>
-                        <li>여행지</li>
-                        <ul class="region" >
-                            <li><a href="./Fukuoka.html" >후쿠오카</a></li>
-                            <li id="clicked"><a href="./Osaka.html">오사카</a></li>
-                            <li><a href="./Tokyo.html" >도쿄</a></li>
-                            <li><a href="./HokkaiDo.html" >홋카이도</a></li>
-                        </ul>
-                    </ul>
-                </nav>
                 <!--main content 영역-->
                 <section id="section">
                     <header id="header_article">
-                        <h1 class="article_title">오사카</h1>
+                        <h1 class="article_title">홋카이도</h1>
                         <div id="imghd">
                             <img src="./images/Osaka_main.jpg" class="img_main" alt="오사카" style="width: 550px;">
-                            <div id="mapbox" name="osaka">
-                                <img src="./images/map/map_osaka.png" id="img_map" alt="osaka">
+                            <div id="mapbox" name="HokkaiDo">
+                                <img src="./images/map/map_hokkaido.png" id="img_map" alt="osaka">
                             </div>    
                         </div>
-                        <p style="width: 540px;">접근성이 좋아 첫 해외여행지로 어렵지 않은 오사카. 다양한 먹거리와 볼거리, 즐길 거리가 풍부해
-                        눈과 입이 즐겁다. 또 주변에 있는 교토 나라등 색다른 매력이 있는 도시들도 같이 들르면 좋다.
+                        <p style="width: 540px;">맥주, 온천, 눈 축제 등 홋카이도에는 즐길거리와 구경거리가 다양하다. 
+                            봄에가면 라일락 축제, 겨울에 가면 눈축제를! 사계절 내내 심심할 틈 없는 여행지로 손꼽힌다.
                         </p><br>
                         <div id="libox">
                             <h4 id="_list">목차</h4>
                             <ul id="ConList">
                                 <li><a href="#food">먹을거리</a></li>
                                 <li><a href="#sight">관광지</a></li>
+                                <!--디저트?-->
                                 <li><a href="#nearby_city">주변 도시</a></li>
                             </ul>
                         </div>
                     </header>
                     <article>
                             <h2 class="content_title" id="food">먹을거리</h2>
-                            <h4>타코야키</h4>
+                            <h4>카이센동</h4>
                             <img src="./images/takoyaki01.jpg" class="img_main">
-                            <p>타코야키하면 오사카, 보들보들한 속과 쫄깃한 문어 식감이 잘 어우러져 자꾸 생각나게 된다. <br>크기가 조금 커 이쑤시개 하나로는 먹기 불편하니 넉넉히 챙기자.
+                            <p>카이센동이라 불리는 해물 덮밥은 밥 위에 싱싱한 해산물을 올린 덮밥이다. 위에 올린 토핑 종류는 다양하다. 
+                                연어, 게 다리, 연어알, 가리비, 성게알 등 자신의 취향에 따라 골라먹을 수 있는 재미가 있다.
+                                <blockquote><i>"개인적으로 성게알을 강추한다."</i></blockquote>
                             </p>
-                            <h4>오코노미야끼</h4>
-                            <!--유명 맛집 아-란/카츠몬/후쿠타로-->
+                            <h4>징키스칸</h4>
                             <img src="./images/okonomiyaki.jpg" class="img_main">
                             <p>오사카에서 탄생한 음식으로, 다양한 재료를 반죽해 철판에 구운 일본식 부침개라할 수 있다. 취향대로 '오코노미'와 구이 '야키'가 합쳐진 말로 원하는 재료를 골라 넣어먹을 수 있는 가게도 있다.
                                 대부분의 가게에선 직원들이 구워주는 경우가 많으니 걱정 말고 가보자.
                             </p>
-                            <h4>쿠시카츠</h4>
+                            <h4>수프 카레</h4>
                             <img src="./images/kusikatsu.jpg" class="img_main">
                             <p>바삭한 꼬치 튀김을 톡 쏘는 소스에 찍어 먹으면 시원한 맥주 생각이 절로 난다. 단 소스는 한 번만 찍는게 국룰이므로 기억하고 가자.</p>
-                            <h4>고베규</h4>
+                            <h4>털게 요리</h4>
                             <img src="./images/gobegyu.jpg" class="img_main">
                             <p>일본, 그것도 칸사이 지방에 왔다면 꼭 먹어봐야 할 메뉴. 일본의 와규가 유명하는 것은 누구나 잘 아는 사실이지만, 
                                 그중에서도 고베 지역의 소인 고베규는 차원이 다르다. 마블링이 일품이라 불에 살짝만 구워도 그 풍미가 뛰어나다.</p>
                             <h2 class="content_title" id="sight">관광지</h2>
-                            <h4>오사카 성</h4>
+                            <!--삿포로 맥주공장/닛카 위스키 공장/오타루 운하/후라노&비에이/오도리공원-->
+                            <h4></h4>
                             <div class="box2">
                             <img src="./images/osakacastle01.JPG" class="imgpos" >
                             <img src="./images/osakacastle02.JPG" class="imgpos" style="top: 0px;left: 410px;">
@@ -155,14 +157,18 @@
                             </p>
                     </article>
                     <footer>
-                        <br>
+                        <footer id="con_foot">
+                            <h5 class="foot_title">추천 웹사이트</h5>
+                            <a href="https://www.visit-hokkaido.jp/" target="_blank" class="foot_link">Go Tokyo</a>
+                            <p style="margin-top: 10px;">홋카이도 공식 관광사이트</p>
+                        </footer>
                     </footer>
                 </section>
                 <aside id="aside">
                     <h4 id="aside_title">Google 지도</h4>
                     <div class="map">
                     <!--하카타역-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.056692031543!2d135.52169924924414!3d34.68577201500739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf01d07d5ca11e41!2z7Jik7IKs7Lm0IOyEsQ!5e0!3m2!1sko!2skr!4v1654710219171!5m2!1sko!2skr" width="351px" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11660.468945109722!2d141.34485096268824!3d43.06000179268211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2bb0bcafffff%3A0xe3f40c860efe8454!2z7IK_7Y-s66GcIOyYpOuPhOumrCDqs7Xsm5A!5e0!3m2!1sko!2skr!4v1655052334180!5m2!1sko!2skr" width="446" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </aside>
             </div>
