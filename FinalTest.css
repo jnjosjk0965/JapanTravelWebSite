@@ -205,7 +205,7 @@ img{
     border: 4px solid #feeeee;
     background-color: #000000aa;
     position: relative;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 #head_box:hover {
     transform: scale(1.05);
