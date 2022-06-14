@@ -52,7 +52,6 @@ ul li {
     font-size: 16px;
 }
 a {
-    border-bottom: dotted 1px;
     color: #fafbfc;
     text-decoration: none;
 }
@@ -374,18 +373,20 @@ article h4 {
 #con_foot {
     position: relative;
     margin-top: 50px;
-    height: 120px;
+    height: 60px;
 }
 .foot_title {
     border-bottom: 1px solid #f56a6a;
     margin-bottom: 20px;
 }
 .foot_link {
+    color: #b1b2b3;
     font-size: 24px;
-    border-bottom: 1px solid;
+    border-bottom: none;
 }
 .foot_link:hover {
     color: #d54a4a;
+    border-bottom: 1px solid ;
 }
 #libox {
     border: 1px solid #b1b2b3;
