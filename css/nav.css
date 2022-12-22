@@ -1,0 +1,84 @@
+/*nav*/
+
+#nav{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #000000aa;
+    padding: 10px 5px 15px 5px;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.1em;
+}
+/*neon effect*/
+@keyframes neon {
+	from {
+		text-shadow: 0 0 4px #b1b2b3,
+					 0 0 8px #b1b2b3,
+					 0 0 12px #b1b2b3,
+					 0 0 16px #f56a6a,
+					 0 0 28px #f56a6a,
+					 0 0 32px #f56a6a,
+					 0 0 38px #f56a6a,
+					 0 0 45px #f56a6a;
+	}
+	to {
+		text-shadow: 0 0 2px #b1b2b3,
+                     0 0 4px #b1b2b3,
+                     0 0 6px #b1b2b3,
+                     0 0 8px #f56a6a,
+                     0 0 12px #f56a6a,
+                     0 0 15px #f56a6a,
+                     0 0 18px #f56a6a,
+                     0 0 21px #f56a6a;
+	}
+}
+#nav .logo {
+    margin-left: 1em;
+    padding-top: 10px;
+    border-bottom: 0;
+    text-shadow: 3px 3px 1px #212121,
+                0px 0px 5px #d1d1d1;
+    font-family: "Jua","Roboto Slab", serif;
+    font-size: 2.5em;
+    transition: all 0.2s;
+}
+#icon_box {
+    overflow: hidden;
+}
+#nav .icons {
+    float: right;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 25px;
+}
+#nav .icons a {
+    border: none;
+    font-family: "Jua","Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+#nav #nav_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav .region {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 60%;
+}
+#nav .region li{
+    display: inline;
+    font-size: 1.5em;
+	animation: neon 2.5s ease-in-out infinite alternate;
+}
+#nav .region a {
+    border: none;
+    transition: all 0.4s;
+}
+#clicked a{
+    color: #f56a6a;
+}

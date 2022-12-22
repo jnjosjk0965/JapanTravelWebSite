@@ -1,0 +1,16 @@
+/*aside*/
+#aside {
+    width: 480px;
+    padding: 70px 10px 0 20px;
+    float: left;
+    position: relative;
+}
+#aside_title {
+    margin-bottom: 15px;
+}
+.map {
+    filter: grayscale(0.2);
+    box-shadow: 2px 2px 30px rgba(140, 140, 140, 0.5);
+    border: 2px solid #ffffff;
+    height: 354px;
+ }
