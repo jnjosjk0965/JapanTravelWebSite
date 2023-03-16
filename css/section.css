@@ -1,0 +1,175 @@
+/*wrap*/
+
+#wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#wrap > #inner {
+    width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 0;
+}
+
+/*container*/
+
+#container{
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #f56a6a;
+    background-color: #212121;
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*section*/
+
+#section{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border-right: 2px solid #f56a6a;
+    padding: 40px 60px 0 60px;
+    width: 1000px;
+    min-height: inherit;
+}
+#section h1,h2,h3,h4,h5,h6 {
+    padding-bottom: 10px;
+}
+#header_article{
+    margin-bottom: 10px;
+}
+#header_article .article_title{
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f56a6a;
+}
+#article_content{
+    line-height: 1.5em;
+    margin-left: 30px;
+    width: 500px;
+}
+article h4 {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+article h5{
+    margin-left: 50px;
+}
+#libox {
+    margin-top: 10px;
+    border: 1px solid #b1b2b3;
+    width: 200px;
+    height: 180px;
+}
+/*tips*/
+.tips{
+    display: inline-block;
+    width: 70px;
+    margin: 10px 0 0 40px;
+    padding: 10px 15px;
+}
+.toolTip{
+    position: absolute;
+    width: auto;
+    min-height: 60px;
+    border: 1px solid gray;
+    background-color: #212121;
+    display: none;
+    z-index: 2550;
+}
+.toolTip #tip-content{
+    line-height: 1.5em;
+    margin: 10px 20px 20px 10px;
+}
+
+/*map image*/
+
+#imghd {
+    position: relative;
+    width: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+#mapbox {
+    margin: 10px 20px 0 0;
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 316px;
+    border: 2px solid #fafbfc55;
+    border-radius: 10px;
+}
+#img_map {
+    position: absolute;
+    width: 280px;
+    height: 316px;
+    z-index: 1;
+    transition: all 1.5s;
+}
+#mapbox[name="hukuoka"]:hover #img_map{
+    transform: scale(2);
+    top: -200px;
+    right: -140px;
+}
+#mapbox[name="osaka"]:hover #img_map {
+    transform: scale(2);
+    top: -150px;
+    right: -50px;
+}
+#mapbox[name="Tokyo"]:hover #img_map {
+    transform: scale(2);
+    top: -100px;
+    right: 30px;
+}
+#mapbox[name="HokkaiDo"]:hover #img_map {
+    transform: scale(2);
+    top: 140px;
+    right: 110px;
+}
+/*tabs*/
+#content_box{
+    display: flex;
+    flex-direction: column;
+}
+.tabs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+ul.tabs li{
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+ul.tabs li:last-child{
+    border: none;
+}
+ul.tabs li.current{
+    background-color: #323232;
+}
+.tab-content.current{
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+}
+.tab-content{
+    display: none;
+}
+.tab-content>p{
+    line-height: 1.7em;
+    width: 650px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.tab-content p:last-child{
+    margin-bottom: 60px;
+}
+.tab-content h4:first-child{
+    margin-top: 30px;
+}
+div#food img{
+    margin : 50px 0 0 50px;
+}

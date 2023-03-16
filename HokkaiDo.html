@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>홋카이도 알아보기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/bucket.js"></script>
+    <script defer src="./js/slide.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/jquery.js"></script>
+</head>
+
+<body data-city="Hokkaido">
+    <div id="top"></div>
+    <div id="wrap">
+        <!--header 영역-->
+        <header id="header_content">
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <div id="nav_icons">
+                    <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
+                    <ul class="region">
+                        <li><a href="./Fukuoka.html">후쿠오카</a></li>
+                        <li><a href="./Osaka.html">오사카</a></li>
+                        <li><a href="./Tokyo.html">도쿄</a></li>
+                        <li id="clicked"><a href="./HokkaiDo.html">홋카이도</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div id="inner">
+            <div id="container">
+                <!--main content 영역-->
+                <section id="section">
+                    <header id="header_article">
+                        <h1 class="article_title">홋카이도</h1>
+                        <div id="imghd">
+                            <img src="./images/hokkaido_main.jpg" class="img_main" alt="오사카" style="width: 550px;">
+                            <div id="mapbox" name="HokkaiDo">
+                                <img src="./images/map/map_hokkaido.png" id="img_map" alt="osaka">
+                            </div>
+                        </div>
+                        <p id="article_content">맥주, 온천, 눈 축제 등 홋카이도에는 즐길거리와 구경거리가 다양하다.
+                            봄에가면 라일락 축제, 겨울에 가면 눈축제를! 사계절 내내 심심할 틈 없는 여행지로 손꼽힌다.
+                        </p>
+                    </header>
+                    <article>
+                        <div id="content_box">
+                            <ul class="tabs">
+                                <li class="tab_link current" data-tab="food">먹을거리</li>
+                                <li class="tab_link" data-tab="sight">관광지</li>
+                                <li class="tab_link" data-tab="nearby_city">주변도시</li>
+                            </ul>
+                            <div id="food" class="tab-content current">
+                                <h4>카이센동</h4>
+                                <img src="./images/kaisendon.jpg" class="img_main">
+                                <p>카이센동이라 불리는 해물 덮밥은 밥 위에 싱싱한 해산물을 올린 덮밥이다. 위에 올린 토핑 종류는 다양하다.
+                                    연어, 게 다리, 연어알, 가리비, 성게알 등 자신의 취향에 따라 골라먹을 수 있는 재미가 있다.
+                                
+                                </p>
+                                <div>
+                                    <span class="tips" data-tips="to1">※ps</span>
+                                    <div class="toolTip" id="to1">
+                                        <p id="tip-content">"개인적으로 성게알(우니 うに)을 강추한다."</p>
+                                    </div>
+                                </div>
+                                <h4>징기스칸</h4>
+                                <img src="./images/jingisukan.jpg" class="img_main">
+                                <p>징기스칸은 둥근 헬멧 형태의 철판에 양고기를 양배추, 콩나물 등과 같은 채소와 구워낸 요리다.
+                                    기호에 따라 양념에 살짝 찍어먹으면 된다.
+                                </p>
+                                <h4>수프 카레</h4>
+                                <img src="./images/soupcurry.jpg" class="img_main">
+                                <p>일본 풍의 카레와 진한 향을 내는 수프를 섞어 밥과 같이 제공하는 요리. 신선하고 향이 좋은 허브, 각종 채소들이 들어가 건강식으로 즐길 수 있는
+                                    요리다.
+                                    매운 맛에서부터 순한 맛까지 자신의 취향대로 선택해 주문해 먹을 수 있다.
+                                </p>
+                                <h4>털게 요리</h4>
+                                <img src="./images/kegani.jpg" class="img_main">
+                                <p>삿포로의 특산품인 털게는 탕, 찜, 등 다양한 방법으로 요리해 먹는다. 잘익은 등딱지에 밥을 비벼 먹는 그 맛이 일품이다.</p>
+                            </div>
+                            <div id="sight" class="tab-content">
+                                <h4>삿포로 맥주공장</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/beerfac01.jpg"></li>
+                                        <li><img src="./images/beerfac02.jpg"></li>
+                                        <li><img src="./images/beerfac03.jpg"></li>
+                                        <li><img src="./images/beerfac04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>삿포로 맥주의 모든 것, 일본 유일의 맥주 박물관</h5>
+                                <p>1987년 개관 이후 꾸준히 사랑받고 있는 곳. 맥주 제조 과정, 시대별 변천사 등 맥주에 대한 다양한 궁금증을 해소할 수 있다.
+                                    유료 맥주 시음, 견학 등 직접 참여해볼 수 있는 이벤트도 마련돼 있다.
+                                    전시관을 천천히 구경한 후 라운지에서 마시는 맥주는 꿀맛!
+                                </p>
+                                <br>
+                                <h4>오도리공원</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/odori01.jpg"></li>
+                                        <li><img src="./images/odori02.jpg"></li>
+                                        <li><img src="./images/odori03.jpg"></li>
+                                        <li><img src="./images/odori04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>다양한 축제와 꽃이 가득한 삿포로 대표 공원</h5>
+                                <p>삿포로 중심부에 위치해 있는 도심 공원으로 동서 방향 1.5km에 걸쳐 긴 산책로가 조성돼 있다.
+                                    뻥뚤린 시야너머로는 삿포로 랜드마크인 TV 타워가 보인다. 또한 오도리 공원에서는 요사코이 소란축제, 눈 축제나 일루미네이션 등, 계절마다 다양한
+                                    이벤트가
+                                    개최되는
+                                    홋카이도 제일의 회장이다.
+                                </p>
+                                <br>
+                                <h4>나카지마 공원</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/nakajima01.jpg"></li>
+                                        <li><img src="./images/nakajima02.jpg"></li>
+                                        <li><img src="./images/nakajima03.jpg"></li>
+                                        <li><img src="./images/nakajima04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>풍경이 아름다운 공원</h5>
+                                <p>19세기에 조성된 공원으로, 우거진 녹음과 작은 호수들이 어우러진 아름다운 풍경을 볼 수 있는 곳이다.
+                                    또한 사계절 내내 다양한 축제가 열리는 장소이다. 특히 눈을 이용해 다양한 조형물을 만들어 볼 수 있는 겨울 축제
+                                    '유키 아카리 인 나카지마 공원' 어린이들뿐만 아니라 연인과 가족 등 모든 층에게 인기있는 축제로 유명하다.
+                                </p>
+                            </div>
+                            <div id="nearby_city" class="tab-content">
+                                <h4>오타루</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/otaru01.jpg"></li>
+                                        <li><img src="./images/otaru02.jpg"></li>
+                                        <li><img src="./images/otaru03.jpg"></li>
+                                        <li><img src="./images/otaru04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>삿포로와 가까운 항구도시</h5>
+                                <p>1872년 홋카이도 최초로 부두를 건설하고 1880년에는 삿포로와 처음으로 철도를 개통했다.
+                                    항구의 운하를 중심으로 도시가 발달한 것이 특징. 영화 '러브레터'의 촬영지로도 유명하다.
+                                </p>
+                                <h4>후라노&비에이</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/huranobiei01.jpg"></li>
+                                        <li><img src="./images/huranobiei02.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>천혜 자연 경관이 아름다운 후라노&비에이</h5>
+                                <p>여름에는 라벤더 향기에 흠뻑 취하고 겨울에는 눈의 아름다움에 반하게 되는곳.
+                                    삿포로에서 하루 일정으로 다녀올 수 있다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <footer>
+                        <footer id="con_foot" style="height: 180px;">
+                            <h5 class="foot_title">추천 웹사이트</h5>
+                            <a href="https://www.visit-hokkaido.jp/" target="_blank" class="foot_link">HOKKAIDO
+                                LOVE!</a>
+                            <p style="margin-top: 10px;">홋카이도 공식 관광사이트</p>
+                        </footer>
+                    </footer>
+                </section>
+                <aside id="aside">
+                    <div id="clock">
+                        <h3>현재 시각</h3>
+                        <h4>00:00</h4>
+                    </div>
+                    <div id="weather">
+                        <h4>지역</h4>
+                        <div>날씨</div>
+                    </div>
+                    <h4 id="aside_title">Google 지도</h4>
+                    <div class="map">
+                        <!--오도리 공원-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11660.468945109722!2d141.34485096268824!3d43.06000179268211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2bb0bcafffff%3A0xe3f40c860efe8454!2z7IK_7Y-s66GcIOyYpOuPhOumrCDqs7Xsm5A!5e0!3m2!1sko!2skr!4v1655052334180!5m2!1sko!2skr"
+                            width="446" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--footer 영역-->
+        <div id="footer">
+            <div id="address">
+                <h6 id="address">제작자 : 주재석</h6>
+                <h6 id="address">E-mail : wnwotjr8@naver.com</h6>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-control">
+                <li id="toConBox">
+                    <span><img src="./images/menu_icon.png" width="40px" alt="목차로"></span>
+                </li>
+                <li id="toTop">
+                        <span><img src="./images/arrow_up_icon.png" width="40px" alt="위로"></span>
+                </li>
+                <li id="toBottom">
+                    <a href="#bottom">
+                        <span><img src="./images/arrow_down_icon.png" width="40px" alt="아래로"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bucketVisible">양동이</div>
+        <div id="bucketBox" style="opacity: 0">
+            <h5>BucketList</h4>
+                <ul id="bucketList"></ul>
+                <form id="bucketForm">
+                    <input type="text" placeholder="Write a bucket List!">
+                </form>
+        </div>
+    </div>
+    <div id="bottom"></div>
+</body>
+
+</html>

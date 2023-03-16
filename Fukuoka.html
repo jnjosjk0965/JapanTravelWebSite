@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>후쿠오카 알아보기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/bucket.js"></script>
+    <script defer src="./js/slide.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/jquery.js"></script>
+</head>
+
+<body data-city="Fukuoka">
+    <div id="top"></div>
+    <div id="wrap">
+        <!--header 영역-->
+        <header id="header_content">
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <div id="nav_icons">
+                    <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
+                    <ul class="region">
+                        <li id="clicked"><a href="./Fukuoka.html">후쿠오카</a></li>
+                        <li><a href="./Osaka.html">오사카</a></li>
+                        <li><a href="./Tokyo.html">도쿄</a></li>
+                        <li><a href="./HokkaiDo.html">홋카이도</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="inner">
+            <div id="container">
+                <!--main content 영역-->
+                <section id="section">
+                    <header id="header_article">
+                        <h1 class="article_title">후쿠오카</h1>
+                        <div id="imghd">
+                            <img src="./images/fukuoka_main.png" class="img_main" alt="" style="width: 550px;">
+                            <div id="mapbox" name="hukuoka">
+                                <img src="./images/map/map_hukuoka.png" id="img_map" alt="hukuoka">
+                            </div>
+                        </div>
+                        <p id="article_content">한국과 가깝고 저렴해서 기대없이 떠났다가 두 번 가고, 세 번 가고, 철마다 간다는 후쿠오카.
+                            그만큼 먹거리와 즐길 거리도 풍성하고 교통도 편리하여 여행 초보자에게 매력이 넘치는 곳.
+                            또한 근교의 도시들도 특색이 넘쳐 볼거리가 풍부하다.</p>
+                        <span class="tips" data-tips="hu1">※tip</span>
+                        <div class="toolTip" id="hu1">
+                            <p id="tip-content">여행을 가기전 교통패스를 구입해 가면 좋다.</p>
+                        </div>
+                    </header>
+                    <article>
+                        <div id="content_box">
+                            <ul class="tabs">
+                                <li class="tab_link current" data-tab="food">먹을거리</li>
+                                <li class="tab_link" data-tab="sight">관광지</li>
+                                <li class="tab_link" data-tab="nearby_city">주변도시</li>
+                            </ul>
+                            <div id="food" class="tab-content current">
+                                <h4>하카다 라멘</h4>
+                                <img src="./images/hakata_ramen.jpg" class="img_main">
+                                <p>일본 대표 메뉴인 라멘. 3대 라면중 하나인 하카타 라멘은 진하게 우려낸 돼지뼈 국물의 돈코츠 라멘이다. 깔끔한 맛의 뿌연 육수에 가늘지만 탄력 있는
+                                    면이
+                                    특징.
+                                    고명으로 올라가는 챠슈(얇게 썬 돼지고기)가 사르르 녹는다.
+                                    유명 체인으로는 이치란(一蘭),잇푸도(一風堂)가 있다.
+                                </p>
+                                <h4>모츠나베</h4>
+                                <img src="./images/motunabe.jpg" class="img_main">
+                                <p>일본식 곱창전골. 소의 내장(모츠)을 넣어 만든 나베 요리. 곱창과 부추, 양배추 등 채소와 완자를 넣고 간장이나 된장으로 맛을 내 푹 끓여 먹는다.
+                                    곱창을 다
+                                    먹고
+                                    남은 국물에 국수를 말아 먹는 것도 잊지 말자.</p>
+                                <h4>미즈타키</h4>
+                                <img src="./images/mizutaki.png" class="img_main">
+                                <p>후쿠오카 대표 향토요리. 닭고기를 푹 우려낸 국물이 닭곰탕과 비슷한데 샤브샤브처럼 먹는 게 특이하다. 미즈타키는 먼저 국물에 소금을 조금만 넣어 깊은
+                                    맛을
+                                    충분히 즐긴
+                                    다음, 닭고기와 양배추를 소스와 함께 먹는다. 마지막으로 밥을 넣고 끓여 죽으로 즐긴다.</p>
+                                <h4>고보텐 우동</h4>
+                                <img src="./images/gobouten_udon.jpg" class="img_main">
+                                <p>넙적하고 부드러운 면에 우엉튀김(고보텐)을 얻은 후쿠오카 대표 우동. 일본 우동의 발상지답게 가츠오부시와 해산물로 맛을 낸 국물이 일품.</p>
+                                <h4>후쿠오카 함바그</h4>
+                                <img src="./images/hukuoka_hamberg.png" class="img_main">
+                                <p>어쩌면 후쿠오카를 떠올릴때 가장 먼저 생각 나는 메뉴. 서양에서 들어온 햄버그 스테이크를 일본식으로 만든 것이다. 함바그에 동양식으로 밥, 된장국을
+                                    곁들여
+                                    먹으며,
+                                    자신의 취향에 맞게 다양한 소스나 사이드, 토핑을 선택할 수 있어서 좋다. 특정 전문점들은 생 함바그를 개인 돌판에 직접 구워먹는 방식으로 유명하다.
+                                </p>
+                            </div>
+                            <div id="sight" class="tab-content">
+                                <h4>커낼시티 하카타</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/canalcity02.jpg"></li>
+                                        <li><img src="./images/canalcity01.jpg"></li>
+                                        <li><img src="./images/canalcity03.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>쇼핑과 엔터테인먼트를 동시에 즐길 수 있는 복합 상업시설</h5>
+                                <p>다양한 브랜드 매장과 레스토랑, 각종 엔터테인먼트 시설이 모여 있는 하카타 지역 대표 복합 상업 시설
+                                    매일 분수쇼가 열리는 180m 길이의 운하가 있는 것으로 유명하다.
+                                </p>
+                                <br>
+                                <h4>텐진</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/tenjin01.jpg"></li>
+                                        <li><img src="./images/tenjin02.jpg"></li>
+                                        <li><img src="./images/tenjin03.jpg"></li>
+                                        <li><img src="./images/tenjin04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>맛집 탐방과 쇼핑을 함께 즐길 수 있는 번화가</h5>
+                                <p>텐진은 후쿠오카 제일의 번화가로 다양한 물품을 파는 가게들과 백화점이 밀집해있다.
+                                    또한 지하에는 텐진의 지하를 남북으로 관통하는 텐진지하상가가 있다.
+                                    약 590m의 지하상가에 1000여개의 매장이 늘어서있어 쇼핑을 좋아하는 분이라면 <b>강추</b>
+                                </p>
+                                <br>
+                                <h4>다자이후</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/dazaihu01.jpg"></li>
+                                        <li><img src="./images/dazaihu02.jpg"></li>
+                                        <li><img src="./images/dazaihu03.jpg"></li>
+                                        <li><img src="./images/dazaihu04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>많은 명소를 구경하며 산책하기 좋은 곳</h5>
+                                <p>다자이후에는 학문의 신 '스와가라노 미치자네'를 모시고 있는 텐만구가 있어서 해마다 입시철이 되면
+                                    합격을 기원하는 많은 참배객이 합격기원 부적 구입을 위해 모인다. 또 오모테산도에는 많은 가게들이 있어 구경거리도 많아 산책하기 좋다.
+                                <div>
+                                    <span class="tips" data-tips="hu2">※ps</span>
+                                    <div class="toolTip" id="hu2">
+                                        <p id="tip-content">"카사노야(かさの家)에서 먹은 '우메가에모찌'와 차가 기억에 남는다."</p>
+                                    </div>
+                                    <span class="tips" data-tips="hu3">※tip</span>
+                                    <div class="toolTip" id="hu3">
+                                        <p id="tip-content">※추가로 다자이후 산책 티켓은 왕복기차권과 우메가에모찌 교환권을 준다.</p>
+                                    </div>
+                                </div>
+
+                                </p>
+
+                                <h4>후쿠오카 타워</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/hukuokatower01.jpg"></li>
+                                        <li><img src="./images/hukuokatower02.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>후쿠오카의 전망을 한눈에 볼 수 있는 랜드마크 타워</h5>
+                                <p>후쿠오카 타워는 시사이드 모모치 해변근처에 있는 높이 234m의 랜드마크이다.
+                                    타워 내부의 전망대에서는 끝없이 펼쳐진 하카타 만을 감상할 수 있다. <br>
+                                    <span class="tips" data-tips="hu4">※ps</span>
+                                <div class="toolTip" id="hu4">
+                                    <p id="tip-content">"버스를 타고 가다 보이는 바다가 아찔했던 기억이있다."</p>
+                                </div>
+                                </p>
+
+                            </div>
+                            <div id="nearby_city" class="tab-content">
+                                <h4>벳푸</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/beppu01.jpeg"></li>
+                                        <li><img src="./images/beppu02.JPG"></li>
+                                        <li><img src="./images/beppu03.JPG"></li>
+                                        <li><img src="./images/beppu04.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>온천으로 유명한 도시</h5>
+                                <p>벳푸에는 지옥 순례라는 독특하고 다양한 색채와 형태의 7개의 온천을 구경할 수 있다.
+                                    또 근처에는 식도락과 온천을 즐길 수 있는 온천마을인 유후인이 있다.
+                                <div>
+                                    <span class="tips" data-tips="hu5">※ps</span>
+                                    <div class="toolTip" id="hu5">
+                                        <p id="tip-content">"벳푸의 토요츠네에서 먹은 텐동이 기억이 난다."</p>
+                                    </div>
+                                </div>
+
+                                </p>
+                                <h4>쿠마모토</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/kumamoto01.jpg"></li>
+                                        <li><img src="./images/kumamoto02.jpg"></li>
+                                        <li><img src="./images/kumamoto03.png"></li>
+                                        <li><img src="./images/kumamoto04.png"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <!--쿠마모토 성(3대성)/쿠마몬/쿠로카와온천/전차-->
+                                <h5>쿠마몬의 고향</h5>
+                                <p>쿠마모토 성은 일본 3대성 중 하나로 2016년 무너져 내려 내부관람이 불가능 했으나 최근들어 관람 가능하게 되었다.
+                                    또한 주변에 아소산, 쿠로카와온천등 가볼곳도 많아 매력적인곳이다. <br>유명한 먹거리로는 바사시(馬刺し)말고기 육회가 있다.
+                                </p>
+                                <h4>가고시마</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/kagosima01.png"></li>
+                                        <li><img src="./images/kagosima02.png"></li>
+                                        <li><img src="./images/kagosima03.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                        &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <!--야쿠시마/사쿠라지마/키리시마 -->
+                                <h5>자연환경이 아름다운 그 곳</h5>
+                                <p>온화한 날씨에 소도시의 여유로움, 화산이 만들어낸 웅장한 자연경관을 가진 가고시마는 최고의 힐링여행지이다. 또한 야쿠시마는 원령공주의 배경으로 유명하다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                   
+                </section>
+                <aside id="aside">
+                    <div id="clock">
+                        <h3>현재 시각</h3>
+                        <h4>00:00</h4>
+                    </div>
+                    <div id="weather">
+                        <h4>지역</h4>
+                        <div>날씨</div>
+                    </div>
+                    <div>
+                        <h4 id="aside_title">Google 지도</h4>
+                        <div class="map">
+                            <!--하카타역-->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.18857788148!2d130.4123681942826!3d33.58988170990646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z7ZWY7Lm07YOA!5e0!3m2!1sko!2skr!4v1654448418940!5m2!1sko!2skr"
+                                width="446px" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--footer 영역-->
+        <div id="footer">
+            <div id="address">
+                <h6 id="address">제작자 : 주재석</h6>
+                <h6 id="address">E-mail : wnwotjr8@naver.com</h6>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-control">
+                <li id="toConBox">
+                    <span><img src="./images/menu_icon.png" width="40px" alt="목차로"></span>
+                </li>
+                <li id="toTop">
+                    <span><img src="./images/arrow_up_icon.png" width="40px" alt="위로"></span>
+                </li>
+                <li id="toBottom">
+                    <a href="#bottom">
+                        <span><img src="./images/arrow_down_icon.png" width="40px" alt="아래로"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bucketVisible">양동이</div>
+        <div id="bucketBox" style="display: none">
+            <h5>BucketList</h5>
+            <ul id="bucketList"></ul>
+            <form id="bucketForm">
+                <input type="text" placeholder="Write a bucket List!">
+            </form>
+        </div>
+    </div>
+    <div id="bottom"></div>
+</body>
+
+</html>

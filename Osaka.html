@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>오사카 알아보기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/bucket.js"></script>
+    <script defer src="./js/slide.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/jquery.js"></script>
+</head>
+
+<body data-city="Osaka">
+    <div id="top"></div>
+    <div id="wrap">
+        <!--header 영역-->
+        <header id="header_content">
+            <!--nav 영역-->
+            <nav id="nav">
+                <div id="icon_box">
+                    <ul class="icons">
+                        <li><a href="https://www.airbnb.co.kr/" target="_blank">에어비엔비</a></li>
+                        <li><a href="https://tabelog.com/kr/" target="_blank">타베로그</a></li>
+                        <li><a href="https://papago.naver.com/" target="_blank">파파고</a></li>
+                    </ul>
+                </div>
+                <div id="nav_icons">
+                    <a href="./index.html" class="logo"><strong>일본여행 정보</strong></a>
+                    <ul class="region">
+                        <li><a href="./Fukuoka.html">후쿠오카</a></li>
+                        <li id="clicked"><a href="./Osaka.html">오사카</a></li>
+                        <li><a href="./Tokyo.html">도쿄</a></li>
+                        <li><a href="./HokkaiDo.html">홋카이도</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="inner">
+            <div id="container">
+                <!--main content 영역-->
+                <section id="section">
+                    <header id="header_article">
+                        <h1 class="article_title">오사카</h1>
+                        <div id="imghd">
+                            <img src="./images/Osaka_main.jpg" class="img_main" alt="오사카" style="width: 550px;">
+                            <div id="mapbox" name="osaka">
+                                <img src="./images/map/map_osaka.png" id="img_map" alt="osaka">
+                            </div>
+                        </div>
+                        <p id="article_content">접근성이 좋아 첫 해외여행지로 어렵지 않은 오사카. 다양한 먹거리와 볼거리, 즐길 거리가 풍부해
+                            눈과 입이 즐겁다. 또 주변에 있는 교토 나라등 색다른 매력이 있는 도시들도 같이 들르면 좋다.
+                        </p>
+                    </header>
+                    <article>
+                        <div id="content_box">
+                            <ul class="tabs">
+                                <li class="tab_link current" data-tab="food">먹을거리</li>
+                                <li class="tab_link" data-tab="sight">관광지</li>
+                                <li class="tab_link" data-tab="nearby_city">주변도시</li>
+                            </ul>
+                            <div id="food" class="tab-content current">
+                                <h4>타코야키</h4>
+                                <img src="./images/takoyaki01.jpg" class="img_main">
+                                <p>타코야키하면 오사카, 보들보들한 속과 쫄깃한 문어 식감이 잘 어우러져 자꾸 생각나게 된다. <br>크기가 조금 커 이쑤시개 하나로는 먹기 불편하니 넉넉히
+                                    챙기자.
+                                </p>
+                                <h4>오코노미야끼</h4>
+                                <!--유명 맛집 아-란/카츠몬/후쿠타로-->
+                                <img src="./images/okonomiyaki.jpg" class="img_main">
+                                <p>오사카에서 탄생한 음식으로, 다양한 재료를 반죽해 철판에 구운 일본식 부침개라할 수 있다. 취향대로 '오코노미'와 구이 '야키'가 합쳐진 말로 원하는
+                                    재료를 골라 넣어먹을 수 있는 가게도 있다.
+                                    대부분의 가게에선 직원들이 구워주는 경우가 많으니 걱정 말고 가보자.
+                                </p>
+                                <h4>쿠시카츠</h4>
+                                <img src="./images/kusikatsu.jpg" class="img_main">
+                                <p>바삭한 꼬치 튀김을 톡 쏘는 소스에 찍어 먹으면 시원한 맥주 생각이 절로 난다. 단 소스는 한 번만 찍는게 국룰이므로 기억하고 가자.</p>
+                                <h4>고베규</h4>
+                                <img src="./images/gobegyu.jpg" class="img_main">
+                                <p>일본, 그것도 칸사이 지방에 왔다면 꼭 먹어봐야 할 메뉴. 일본의 와규가 유명하는 것은 누구나 잘 아는 사실이지만,
+                                    그중에서도 고베 지역의 소인 고베규는 차원이 다르다. 마블링이 일품이라 불에 살짝만 구워도 그 풍미가 뛰어나다.</p>
+                            </div>
+                            <div id="sight" class="tab-content">
+                                <h4>오사카 성</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/osakacastle01.JPG"></li>
+                                        <li><img src="./images/osakacastle02.JPG"></li>
+                                        <li><img src="./images/osakacastle03.JPG"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>일본 3대 성 중 하나</h5>
+                                <p>오사카 관광명소로 손꼽히는 대표적인 곳 오사카성입니다. 봄에는 벚꽃이 만개하여 벚꽃놀이 가기 좋은 여행지고,
+                                    여름에는 푸른 녹음이 지천에 깔리고 가을에는 알록달록 단풍이, 겨울에는 하얀 눈으로 뒤덮히는 어느 계절에 가도 아름다운 곳입니다.
+                                    일본 건축양식을 잘 보여주는 성으로 높은 곳에서 바라보는 천수각이 아름다운 곳입니다. 주변에는 인공호수를 비롯해 산책하기도 좋습니다.
+                                </p>
+                                <br>
+                                <h4>도톤보리, 신사이바시</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/dotonbori01.JPG"></li>
+                                        <li><img src="./images/dotonbori02.JPG"></li>
+                                        <li><img src="./images/dotonbori03.png"></li>
+                                        <li><img src="./images/dotonbori04.JPG"></li>
+
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>쇼핑과 먹거리 천국</h5>
+                                <p>오사카에서도 맛집이 많은 도톤보리. 부지런히 소화를 시켜야 계속 먹을 수 있다. 유쾌한 간판도 많아 포토존으로도 충분.<br>
+                                    신사이바시에는 문구, 의류, 액세서리, 캐릭터, 서점등 없는게 없으니 '텅장 주의보'.
+                                </p>
+                                <br>
+                                <h4>유니버설 스튜디오 재팬</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/usj01.jpg"></li>
+                                        <li><img src="./images/usj02.jpeg"></li>
+                                        <li><img src="./images/usj03.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>오사카를 대표하는 테마파크</h5>
+                                <p>유명 헐리우드 영화를 테마로 한 공원에서 인생샷도 건지고, 흥미진진한 어트렉션도 놓치지 말자.
+                                    최고 인기는 역시 '스파이더맨 라이드'와 '해리포터 라이드'. 최근에는 슈퍼마리오를 배경으로한
+                                    슈퍼 닌텐도 월드도 개장해 화재가 되었다.
+                                </p>
+                                <h4>우메다 스카이 빌딩, 헵파이브</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/umedasky01.JPG"></li>
+                                        <li><img src="./images/umedasky02.JPG"></li>
+                                        <li><img src="./images/umedasky03.JPG"></li>
+                                        <li><img src="./images/umedasky04.JPG"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>도심 속 공중정원</h5>
+                                <p>지상 40층으로 파리 개선문과 비슷한 모양이다. 최고층의 공중 정원 전망대는 사방이 유리라 멀리는 오사카만 까지 보인다.<br>
+                                    또한 우메다에는 대관람차와 대형 오브제 고래로 유명한 헵파이브가 있다. 디즈니 스토어, 짱구, 원피스 등 캐릭터 전문 매장이 모여있고, 또한 20대를
+                                    타깃으로
+                                    한 중저가 브랜드 상점도 많이 있다.
+                                </p>
+                            </div>
+                            <div id="nearby_city" class="tab-content">
+                                <h4>교토</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/kyoto01.JPG"></li>
+                                        <li><img src="./images/kyoto02.JPG"></li>
+                                        <li><img src="./images/kyoto03.JPG"></li>
+                                        <li><img src="./images/kyoto04.JPG"></li>
+                                        <!--키요미즈데라,금각사,후시미 이나리/고슈인-->
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <h5>과거와 현재가 공존하는 교토</h5>
+                                <p>마치 영화와 같은 일본의 옛 모습이 중첩되는 교토. 1,100년 간 수도 역할을 했던 오랜 역사를 증명하는 듯 수많은 유적들을 품고있는 교토는 도시
+                                    전체가
+                                    문화유산이라 해도 과하지 않다.
+                                </p>
+                                <h4>나라</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/nara01.jpg"></li>
+                                        <li><img src="./images/nara02.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <!--나라공원/도다이지-->
+                                <h5>귀여운 사슴들이 돌아다니는 나라.</h5>
+                                <p>오사카와 교토 근교에 위치하고 있어 잠깐 반나절 정도들리기 좋은 관광지이다.
+                                    나라를 방문하면 꼭 가야 하는 곳이 나라 공원이다. 이곳에선 야생 사슴들이 자유롭게 살아가고 있다.
+                                    공원에서 초록의 자연과 함께 사슴에게 먹이를 주던가 함께 운치있는 산책을 즐길 수 있다.
+                                </p>
+                                <h4>고베</h4>
+                                <div class="slide_box">
+                                    <ul class="slides">
+                                        <li><img src="./images/kobe01.jpg"></li>
+                                        <li><img src="./images/kobe02.jpg"></li>
+                                    </ul>
+                                    <p class="controller">
+                                        <!-- &lang: 왼쪽 방향 화살표
+                                    &rang: 오른쪽 방향 화살표 -->
+                                        <span class="prev">&lang;</span>
+                                        <span class="next">&rang;</span>
+                                    </p>
+                                </div>
+                                <!--메리켄파크/ -->
+                                <h5>낭만적인 항구도시 고베</h5>
+                                <p>파도가 잔잔하고 태평양으로 진출하기에 좋은 조건을 갖춘 고베는 예로부터 중국과의 교류 창구 역할을
+                                    했다. 메이지 유신 때의 문화가 그대로 남아 풍경이 이국적이다.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </article>
+                </section>
+                <aside id="aside">
+                    <div id="clock">
+                        <h3>현재 시각</h3>
+                        <h4>00:00</h4>
+                    </div>
+                    <div id="weather">
+                        <h4>지역</h4>
+                        <div>날씨</div>
+                    </div>
+                    <h4 id="aside_title">Google 지도</h4>
+                    <div class="map">
+                        <!--오사카성-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.056692031543!2d135.52169924924414!3d34.68577201500739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf01d07d5ca11e41!2z7Jik7IKs7Lm0IOyEsQ!5e0!3m2!1sko!2skr!4v1654710219171!5m2!1sko!2skr"
+                            width="446px" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--footer 영역-->
+        <div id="footer">
+            <div id="address">
+                <h6 id="address">제작자 : 주재석</h6>
+                <h6 id="address">E-mail : wnwotjr8@naver.com</h6>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-control">
+                <li id="toConBox">
+                    <span><img src="./images/menu_icon.png" width="40px" alt="목차로"></span>
+                </li>
+                <li id="toTop">
+                        <span><img src="./images/arrow_up_icon.png" width="40px" alt="위로"></span>
+                </li>
+                <li id="toBottom">
+                    <a href="#bottom">
+                        <span><img src="./images/arrow_down_icon.png" width="40px" alt="아래로"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bucketVisible">양동이</div>
+        <div id="bucketBox" style="opacity: 0">
+            <h5>BucketList</h4>
+                <ul id="bucketList"></ul>
+                <form id="bucketForm">
+                    <input type="text" placeholder="Write a bucket List!">
+                </form>
+        </div>
+    </div>
+    <div id="bottom"></div>
+</body>
+
+</html>

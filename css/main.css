@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap');
+* {
+    box-sizing: border-box; 
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li, img{
+    margin: 0px;
+    padding: 0;
+    border: 0px;
+    font: inherit;
+}
+article, aside, footer, header, nav, section {
+    display: block; 
+}
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1;
+    color: #fafbfc;
+    background-color: #101010;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #feeeee;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+h1{
+    font-size: 3.8em;
+}
+h2 {
+    font-size: 3.2em; }
+  
+h3 {
+    font-size: 2.6em; }
+  
+h4 {
+    font-size: 2em; }
+  
+h5 {
+    font-size: 1.6em; }
+  
+h6 {
+    font-size: 1em; }
+ol,ul{
+    list-style: none;
+}
+ul li {
+    padding-left: 0.5em;
+}
+input{
+    background: 0;
+    appearance: 0;
+    border: 0;
+}
+input::placeholder{
+    color: white;
+}
+input:focus,
+input:active{
+    outline: none;
+}
+a {
+    border-bottom: dotted 1px;
+    color: #fafbfc;
+    text-decoration: none;
+}
+    a:hover {
+        border-bottom-color: #f56a6a;
+        color: #f56a6a !important; 
+    }
+
+/*image*/
+img{
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+.img_main{
+    border-radius: 0.375em;
+    max-width: 650px;
+    box-shadow: 1px 1px 5px #a1a2a3;
+    margin: 10px 0 1em 0;
+}
+
+/*nav-control*/
+
+.nav-control{
+    position: fixed;
+    margin: 0 0.2rem 1rem 0;
+    right: 1px;
+    bottom: 1px;
+    z-index: 1035;
+}
+.nav-control li{
+    float:left;
+    opacity: .6;
+    margin-right: .2rem;
+    cursor: pointer;
+}
+.nav-control li:hover{
+    opacity:.9
+}
+.nav-control li a{
+    border: 0;
+}

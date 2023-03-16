@@ -1,0 +1,74 @@
+/*header*/
+/*index 의 header*/
+#head_box {
+    width: 500px;
+    height: 40vh;
+    margin: 20vh auto 0 auto;
+    border: 4px solid #feeeee;
+    background-color: #000000aa;
+    position: relative;
+    transition: all 0.5s;
+}
+#head_box:hover {
+    transform: scale(1.05);
+}
+#header_main{
+    height: 100vh;
+    border-bottom: solid 4px #f56a6a;
+    padding: 0 0 4em 0;
+    position: relative;
+    background-image: url(../images/bg_japan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    transition: all 1.5s;
+}
+.box * {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+#head_box .box {
+    width: 360px;
+    height: 200px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-180px;
+    margin-top:-100px;
+}
+/*나머지의 header*/
+#header_content{
+    border-bottom: solid 5px #f56a6a;
+    padding: 0 0 11.5em 0;
+    position: relative;
+    display: flex;
+}
+#header_content::after{
+    background-image: url(../images/bg_header_content_japan.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    filter: blur(3px);
+}
+/*icons*/
+
+ul.icons {
+    list-style: none;
+    padding-left: 0;
+}
+ul.icons li {
+    display: inline-block;
+    padding: 0 0.5em 0 0.5em; 
+    border-right: 2px solid #d1d1d1;
+}
+ul.icons li:last-child {
+    padding-right: 0; 
+    border-right: 0;
+    margin-right: 10px;
+}
+#_list {
+    margin: 10px 0 0 10px;
+}
